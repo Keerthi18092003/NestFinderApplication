@@ -1,0 +1,77 @@
+<section class="vh-100" style="background-color: #4d443d;">
+  <!--Dark pruce-->
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;background-color: #d4ccc6;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <div *ngIf="loginSuccess" class="alert alert-success">
+                  {{ loginSuccess }}
+                </div>
+                <form (ngSubmit)="onFormSubmit()" [formGroup]="loginForm">
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <img src="/images/logonestfinder1.png" alt="Logo" style="width: 50px; height: auto; margin-right: 12px;">
+                    <span class="h1 fw-bold mb-0">Sign in</span>
+                  </div>
+                  <div class="mb-5"></div>
+                  <div data-mdb-input-init class="form-outline mb-5">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email"
+                           class="form-control form-control-lg"
+                           id="email"
+                           formControlName="email"
+                           placeholder="Email address" />
+                    <small *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid" class="text-danger">
+                      A valid email address is required.
+                    </small>
+
+
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-5">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password"
+                           class="form-control form-control-lg"
+                           id="password"
+                           formControlName="password"
+                           placeholder="Password" />
+                    <small *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="text-danger">
+                      A valid password is required.
+                    </small>
+
+
+                  </div>
+                  <div class="mb-5"></div>
+
+                  <div class="pt-1 mb-4">
+                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg" type="submit" style="background-color: black; color: #6D712E;">Login</button>
+                  </div>
+
+                  <a class="small text-muted" href="#!" style="color: black !important;">Forgot password?</a>
+
+                  <p class="mb-5 pb-lg-2">
+                    Don't have an account? <a routerLink="/register"
+                                              style="color:black;">Register here</a>
+                  </p>
+                  <div *ngIf="loginError" class="alert alert-danger">
+                    {{ loginError }}
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

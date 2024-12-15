@@ -1,0 +1,132 @@
+
+.navbar {
+  background-color: #4d443d;
+  padding: 5px 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-container {
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f9fa; /* Optional background color for contrast */
+}
+
+
+
+.search-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+  .search-container form {
+    width: 50%;
+    max-width: 800px;
+  }
+.input-space {
+  width: 10px; /* Add gap between the input field and the button */
+}
+.input-group {
+  width: 100%; 
+}
+
+  .search-container .form-control {
+    width: 80%; 
+  }
+
+  .search-container button {
+    margin-left: 10px;
+  }
+.input-group-append button {
+  border-left: none; /* Remove border on the left side of the button */
+  background: transparent; /* Make the button transparent */
+  padding: 0 10px; /* Padding around the icon */
+}
+
+  .input-group-append button i {
+    font-size: 18px; /* Adjust icon size */
+    color: #007bff; /* Change icon color if needed */
+  }
+
+.listings-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.listing-card {
+  height: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+  .listing-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.horizontal-scroll {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of elements */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: Border to highlight the container */
+  scrollbar-width: thin; /* For modern browsers: makes scrollbar thin */
+  scrollbar-color: #888 transparent; /* For modern browsers: scrollbar color */
+}
+
+.scroll-container {
+  display: flex; /* Aligns items in a row */
+  gap: 10px; /* Adds spacing between images */
+}
+
+  .scroll-container img {
+    height: 200px; /* Fixed height for consistent sizing */
+    object-fit: cover; /* Ensures the image covers the container proportionally */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: transform 0.3s ease; /* Adds smooth hover effect */
+  }
+
+    .scroll-container img:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded scrollbar thumb */
+}
+
+  .horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+  }

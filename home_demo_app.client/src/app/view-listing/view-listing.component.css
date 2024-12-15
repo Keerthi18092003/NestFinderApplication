@@ -1,0 +1,74 @@
+.property-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  
+}
+.property-rows {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 16px; 
+  align-items: flex-start; 
+}
+
+.property-list {
+  padding: 20px;
+  background-color: #4d443d;
+ 
+}
+
+.property-item {
+  background-color: #d4ccc6;
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 300px;
+  border-radius: 8px;
+  flex: 1 1 calc(50% - 16px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+  .property-item h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .property-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 10px;
+}
+.action-btn {
+  background-color: black;
+  color: #6D712E;
+  margin-right: 20px; /* Adds space between buttons */
+  padding: 10px 20px; /* Set padding for consistent button size */
+  width: 120px; /* Set a fixed width for both buttons */
+  text-align: center;
+}
+.property-images {
+  display: grid; /* Use a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the column size */
+  gap: 16px; /* Space between images */
+}
+
+.property-image {
+  border: 1px solid #ddd; /* Optional: Add border around each image */
+  border-radius: 8px; /* Optional: Rounded corners */
+  overflow: hidden; /* Prevent overflow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a better look */
+}
+
+  .property-image img {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Optional: Adjust height */
+    object-fit: cover; /* Keep aspect ratio */
+  }

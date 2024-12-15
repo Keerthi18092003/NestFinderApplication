@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #4d443d;
+  padding: 5px 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container {
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f9fa; /* Optional background color for contrast */
+}

@@ -1,0 +1,55 @@
+<app-admin-layout></app-admin-layout>
+
+<div *ngIf="loading" class="text-center">Loading properties...</div>
+
+<div *ngIf="!loading && properties.length === 0" class="text-center">No properties found.</div>
+
+<div *ngIf="!loading && properties.length > 0" class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Property Type</th>
+        <th>Price (INR)</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>Pincode</th>
+        <th>Description</th>
+        <th>Rental Terms</th>
+        <th>Bedrooms</th>
+        <th>Rooms</th>
+        <th>Area (sq.ft.)</th>
+        <th>Furnished</th>
+        <th>Contact</th>
+        <th>Images</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let property of properties">
+        <td>{{ property.propertyType }}</td>
+        <td>{{ property.price | currency:'INR' }}</td>
+        <td>{{ property.street }}</td>
+        <td>{{ property.city }}</td>
+        <td>{{ property.pincode }}</td>
+        <td>{{ property.description }}</td>
+        <td>{{ property.rentalTerms }}</td>
+        <td>{{ property.bedrooms }}</td>
+        <td>{{ property.rooms }}</td>
+        <td>{{ property.area }}</td>
+        <td>{{ property.furnished ? 'Yes' : 'No' }}</td>
+        <td>{{ property.mobileNumber }}</td>
+        <td>
+          <div *ngIf="property.images?.length > 0" class="property-images">
+            <img *ngFor="let image of property.images"
+                 [src]="'http://localhost:5043/' + image"
+                 alt="Property Image"
+                 class="small-image" />
+          </div>
+        </td>
+        <td>
+          <button class="btn btn-danger btn-sm" (click)="deleteProperty(property.propertyId)" style="color:black">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

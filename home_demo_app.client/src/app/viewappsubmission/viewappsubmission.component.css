@@ -1,0 +1,48 @@
+.application-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+  .application-table thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+  }
+
+  .application-table tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .application-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .application-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+.btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\..\\home_demo_app.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

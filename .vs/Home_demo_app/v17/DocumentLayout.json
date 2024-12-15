@@ -1,0 +1,1135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\controllers\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\controllers\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\tenant\\tenant.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\getusers\\getusers.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\getusers\\getusers.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\admin\\admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\admin\\admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\owner\\owner.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\admin\\admin.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\tenant\\tenant.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\owner\\owner.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\owner\\owner.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\home\\home.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\home\\home.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\services\\appsubmission.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\services\\appsubmission.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\controllers\\addproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\controllers\\addproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\controllers\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\controllers\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\models\\owner module\\appsubmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\models\\owner module\\appsubmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\services\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\services\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\models\\appsubmit_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\models\\appsubmit_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\models\\addpropdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\models\\addpropdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\services\\property.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\services\\property.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\tenant\\tenant.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\models\\user_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\models\\user_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.server\\models\\owner module\\addprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\models\\owner module\\addprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\saich\\source\\repos\\home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Registration.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Controllers\\Registration.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Registration.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Controllers\\Registration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T21:14:34.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "leaseagreement.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T21:03:02.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "leaseagreement.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T21:03:00.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "leaseagreement.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\leaseagreement\\leaseagreement.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T21:02:52.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "tenant-layout.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T19:34:48.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "owner-layout.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.css",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T19:33:04.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "owner-layout.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T19:33:09.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "applicationsubmit.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T06:36:01.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "viewappsubmission.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T16:31:21.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "add-listing.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T09:04:24.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "viewlistingadmin.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T20:53:14.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "tenant.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\tenant\\tenant.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\tenant\\tenant.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-12T19:56:58.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "suspendedusers.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T20:52:22.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "suspendedusers.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\suspendedusers\\suspendedusers.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T20:52:26.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "getusers.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\getusers\\getusers.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\getusers\\getusers.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T20:51:26.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "admin.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\admin\\admin.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\admin\\admin.component.ts",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T19:53:52.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "getusers.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\getusers\\getusers.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\getusers\\getusers.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\getusers\\getusers.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T20:29:50.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "owner.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\owner\\owner.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\owner\\owner.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T10:27:16.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "admin.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\admin\\admin.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\admin\\admin.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T19:35:07.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "view-listing.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T06:29:24.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "view-listing.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T20:40:39.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "add-listing.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T09:04:33.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "view-listing.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\view-listing\\view-listing.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T09:04:10.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T07:14:44.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T07:15:27.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\main.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\main.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\main.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T20:31:04.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\app.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\app.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T08:41:58.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "admin-layout.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T19:54:22.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "tenant-layout.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T20:25:44.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "owner-layout.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T20:14:00.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "add-listing.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\add-listing\\add-listing.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T20:22:31.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "tenant-layout.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T19:34:12.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "admin-layout.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.html",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T19:31:57.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "admin-layout.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\admin-layout\\admin-layout.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T19:31:56.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "admin.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\admin\\admin.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\admin\\admin.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\admin\\admin.component.css",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T19:36:03.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "tenant.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\tenant\\tenant.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\tenant\\tenant.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-13T07:07:06.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "owner.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\owner\\owner.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\owner\\owner.component.css",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T19:32:48.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "owner.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\owner\\owner.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\owner\\owner.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\owner\\owner.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T18:36:07.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "home.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\home\\home.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\home\\home.component.html",
+              "ViewState": "AgIAAGkDAAAAAAAAAAAAAHgDAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T09:17:00.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\index.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\index.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\index.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\index.html",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-14T18:27:29.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "viewappsubmission.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.ts",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T16:38:12.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "home.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\home\\home.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\home\\home.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\home\\home.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T18:26:30.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "appsubmission.service.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T19:54:07.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "applicationsubmit.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.ts",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T06:36:58.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "viewappsubmission.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T17:37:09.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Program.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwEYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T20:49:52.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Appsubmit.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Owner module\\Appsubmit.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Models\\Owner module\\Appsubmit.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Owner module\\Appsubmit.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Models\\Owner module\\Appsubmit.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:37:17.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Application.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Controllers\\Application.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Application.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Controllers\\Application.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwCEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T19:00:18.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AddProperty.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\AddProperty.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Controllers\\AddProperty.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\AddProperty.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Controllers\\AddProperty.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T08:54:35.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "user.service.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\user.service.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\user.service.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\user.service.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\services\\user.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T19:54:24.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "applicationsubmit.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-14T16:53:12.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "viewappsubmission.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewappsubmission\\viewappsubmission.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T16:36:26.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Infrastructure\\DataContext.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Infrastructure\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Infrastructure\\DataContext.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Infrastructure\\DataContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:58:15.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Appsubmit_details.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Appsubmit_details.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Models\\Appsubmit_details.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Appsubmit_details.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Models\\Appsubmit_details.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:57:37.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20241214161155_dbstatusupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Migrations\\20241214161155_dbstatusupdate.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:11:56.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20241214160542_statusadded.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Migrations\\20241214160542_statusadded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:05:43.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Addpropdetails.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Addpropdetails.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Models\\Addpropdetails.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Addpropdetails.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Models\\Addpropdetails.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:39:11.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "applicationsubmit.component.css",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationsubmit\\applicationsubmit.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-14T05:04:37.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "property.service.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\property.service.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\property.service.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\services\\property.service.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\services\\property.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T20:46:41.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "viewlistingadmin.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewlistingadmin\\viewlistingadmin.component.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T20:13:28.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "tenant.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\tenant\\tenant.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\tenant\\tenant.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\tenant\\tenant.component.ts",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T07:06:35.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "User_Details.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\User_Details.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Models\\User_Details.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\User_Details.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Models\\User_Details.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:46:02.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Login.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Controllers\\Login.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Controllers\\Login.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Controllers\\Login.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T09:42:04.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Addprop.cs",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Owner module\\Addprop.cs",
+              "RelativeDocumentMoniker": "Home_demo_app.Server\\Models\\Owner module\\Addprop.cs",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\Home_demo_app.Server\\Models\\Owner module\\Addprop.cs",
+              "RelativeToolTip": "Home_demo_app.Server\\Models\\Owner module\\Addprop.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T18:39:05.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "login.component.ts",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\login\\login.component.ts",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\login\\login.component.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-13T09:42:15.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "login.component.html",
+              "DocumentMoniker": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\login\\login.component.html",
+              "ToolTip": "C:\\Users\\Saich\\source\\repos\\Home_demo_app\\home_demo_app.client\\src\\app\\login\\login.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\login\\login.component.html",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-13T09:42:12.167Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

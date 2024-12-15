@@ -1,0 +1,17 @@
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.small-image {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  object-fit: cover;
+}

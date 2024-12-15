@@ -1,0 +1,113 @@
+<section class="vh-100" style="background-color: #4d443d;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem; background-color: #d4ccc6;">
+          <div class="card-body p-4 p-lg-5 text-black">
+            <form (ngSubmit)="onFormSubmit()" [formGroup]="registersForm">
+              <div class="text-center mb-3 pb-1">
+                <span class="h1 fw-bold">Sign Up</span>
+              </div>
+              <div class="form-outline mb-3">
+                <input type="text"
+                       class="form-control"
+                       name="name"
+                       formControlName="name"
+                       placeholder="Full Name"/>
+                <small *ngIf="registersForm.get('name')?.touched && registersForm.get('name')?.invalid" class="text-danger">
+                  Name should only contain alphabets.
+                </small>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <input type="email"
+                           class="form-control"
+                           name="email"
+                           formControlName="email"
+                           placeholder="Email Address" />
+                    <small *ngIf="registersForm.get('email')?.touched && registersForm.get('email')?.invalid" class="text-danger">
+                      Valid email is required.
+                    </small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <input type="text"
+                           class="form-control"
+                           name="phoneNumber"
+                           formControlName="phoneNumber"
+                           placeholder="Phone Number" />
+                    <small *ngIf="registersForm.get('phoneNumber')?.touched && registersForm.get('phoneNumber')?.invalid" class="text-danger">
+                      Phone number should be exactly 10 digits.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <select class="form-control" name="gender" formControlName="gender">
+                      <option value="">Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <small *ngIf="registersForm.get('gender')?.touched && registersForm.get('gender')?.invalid" class="text-danger">
+                      Gender is required.
+                    </small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <input type="date"
+                           class="form-control"
+                           name="dateOfBirth"
+                           formControlName="dateOfBirth" />
+                    <small *ngIf="registersForm.get('dateOfBirth')?.touched && registersForm.get('dateOfBirth')?.invalid" class="text-danger">
+                      You must be at least 16 years old.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <input type="password"
+                           class="form-control"
+                           name="password"
+                           formControlName="password"
+                           placeholder="Password"/>
+                    <small *ngIf="registersForm.get('password')?.touched && registersForm.get('password')?.invalid" class="text-danger">
+                      Password must contain at least one uppercase, one lowercase, one special character, and some digits.
+                    </small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-outline mb-3">
+                    <input type="password"
+                           class="form-control"
+                           name="confirmPassword"
+                           formControlName="confirmPassword"
+                           placeholder="Confirm Password" />
+                    <small *ngIf="registersForm.get('confirmPassword')?.touched && registersForm.get('confirmPassword')?.invalid" class="text-danger">
+                      Confirmation password is required and must match the password.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mb-3 pb-1">
+                <button class="btn btn-lg" type="submit" style="background-color: black; color: #6D712E;">
+                  Register
+                </button>
+              </div>
+              <p class="mb-5 pb-lg-2">
+                Already have an account? <a routerLink="/login"  style="color:black;">Sign in here</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

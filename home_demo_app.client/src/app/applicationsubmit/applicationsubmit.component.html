@@ -1,0 +1,46 @@
+<app-tenant-layout></app-tenant-layout>
+<div *ngFor="let property of properties" class="property-card">
+  <div *ngIf="property.images?.length > 0">
+    <h4>Images:</h4>
+    <div class="property-images">
+      <div *ngFor="let image of property.images" class="property-image">
+        <img [src]="'http://localhost:5043/'+image" alt="{{image}}" class="zoomable-image" (click)="openImage('http://localhost:5043/'+image)" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Details -->
+  <h3>{{ property.title }}</h3>
+  <p><strong>Type:</strong> {{ property.propertyType }}</p>
+  <p><strong>Price:</strong> {{ property.price | currency: 'INR' }}</p>
+  <p><strong>Location:</strong> {{ property.street}},{{property.city }}</p>
+  <p><strong>Pincode:</strong> {{ property.pincode }}</p>
+  <p><strong>Description:</strong> {{ property.description }}</p>
+  <p><strong>Rental Terms:</strong> {{ property.rentalTerms }}</p>
+  <p><strong>Bedrooms:</strong> {{ property.bedrooms }}</p>
+  <p><strong>Rooms:</strong> {{ property.rooms }}</p>
+  <p><strong>Area (sq.ft.):</strong> {{ property.area }}</p>
+  <p><strong>Furnished:</strong> {{ property.furnished ? 'Yes' : 'No' }}</p>
+  <p><strong>Contact:</strong> {{ property.mobileNumber }}</p>
+  <!-- Apply Button -->
+  <button (click)="toggleApplication(property.id)">Apply</button>
+  <div *ngIf="activeApplication === property.id" class="application-form">
+    <h4>Submit Application</h4>
+    <form (ngSubmit)="submitApplication(property.propertyId)">
+      <label for="tenantType">Tenant Type:</label>
+      <select id="tenantType" [(ngModel)]="applicationData.tenantType" name="tenantType" required>
+        <option value="bachelorMale">Bachelor (Male)</option>
+        <option value="bachelorFemale">Bachelor (Female)</option>
+        <option value="family">Family</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" [(ngModel)]="applicationData.comments" name="comments" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div id="zoomModal" class="zoom-modal" *ngIf="zoomImage">
+  <span class="close-zoom" (click)="closeZoom()">&times;</span>
+  <img class="zoom-img" [src]="zoomImage" alt="Zoomed Image" />
+</div>

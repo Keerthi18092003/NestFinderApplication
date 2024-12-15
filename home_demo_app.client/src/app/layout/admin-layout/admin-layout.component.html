@@ -1,0 +1,39 @@
+<div class="admin-container">
+  <div class="sidebar">
+    <h2>Admin Dashboard</h2>
+    <div class="dropdown">
+      <button class="dropbtn">User Management</button>
+      <div class="dropdown-content">
+        <button (click)="viewUsers()">View All Users</button>
+        <button (click)="suspendAccount()">Suspend Account</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Property Management</button>
+      <div class="dropdown-content">
+        <button (click)="viewProperties()">View Properties</button>
+        <button (click)="removeProperty()">Remove Fraudulent Listings</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Application Oversight</button>
+      <div class="dropdown-content">
+        <button (click)="trackApplications()">Track Applications</button>
+        <button (click)="resolveDispute()">Resolve Disputes</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Support</button>
+      <div class="dropdown-content">
+        <button (click)="openHelpDesk()">Open Help Desk</button>
+        <button (click)="sendMessage()">FAQs Management</button>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.contentofdashboard {
+  padding: 20px;
+  background-color: #d4ccc6;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.form-container {
+  background-color: #d4ccc6; /* Replace with your tab's background color */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.text-muted {
+  color: #6c757d; /* Light gray color for optional text */
+  font-style: italic; /* Make the "Optional" text italic */
+}
+.card {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.btn-danger {
+  margin-top: 5px;
+}

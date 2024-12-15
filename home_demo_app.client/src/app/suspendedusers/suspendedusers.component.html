@@ -1,0 +1,33 @@
+<app-admin-layout></app-admin-layout>
+<div *ngIf="loading" class="text-center">Loading users...</div>
+
+<div *ngIf="!loading && suspendedUsers.length === 0" class="text-center">No users found.</div>
+
+<div *ngIf="!loading && suspendedUsers.length > 0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>PhoneNumber</th>
+        <th>UnSuspend</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of suspendedUsers">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td>
+          <button class="btn btn-success btn-sm"
+                  (click)="unsuspendUser(user.id)" style="color:black" >
+            UnSuspend
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

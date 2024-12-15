@@ -1,0 +1,72 @@
+<app-tenant-layout></app-tenant-layout>
+<div class="main-container">
+
+  <div class="search-container">
+    <form class="form-inline" (ngSubmit)="onSearch()">
+      <div class="input-group">
+        <input class="form-control" type="search" [(ngModel)]="searchQuery" name="search" placeholder="Search Properties" aria-label="Search">
+        <span class="input-space"></span>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="listings-container">
+    <div class="row">
+      <!-- Iterate through properties -->
+      <div class="col-md-4" *ngFor="let property of properties">
+        <div class="listing-card">
+          <!--<div class="image-container">-->
+          <!-- Bootstrap Carousel for multiple images -->
+          <!--<div id="carousel{{ property.propertyType }}" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div *ngFor="let image of property.images" class="property-image">
+          <p>{{image}}</p>
+          <img [src]="'http://localhost:5043/'+image" alt="{{image}}" />
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + property.title" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + property.title" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>-->
+          <!--</div>-->
+          <div class="horizontal-scroll">
+            <div class="scroll-container">
+              <div *ngFor="let image of property.images" class="carousel-cell">
+                <img [src]="'http://localhost:5043/' + image" alt="Property Image" />
+              </div>
+            </div>
+          </div>
+
+              <div class="card-content">
+                <p class="card-price">
+                  <strong>{{ property.price | currency: 'INR' }}</strong> / Month
+                </p>
+                <h5 class="card-title">
+                  <a [routerLink]="['/applicationsubmit', property.propertyId]">{{ property.propertyType }}</a>
+                </h5>
+                <p class="card-text">{{ property.description | slice: 0:100 }}</p>
+                <div class="features">
+                  <span>{{ property.bedrooms }} Bedrooms</span> |
+                  <span>{{ property.rooms }} Rooms</span> |
+                  <span>{{ property.area }} Sqft</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </div>
+  </div>
+
+</div>

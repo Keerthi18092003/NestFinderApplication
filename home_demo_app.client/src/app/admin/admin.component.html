@@ -1,0 +1,15 @@
+<app-admin-layout></app-admin-layout>
+  <div class="main-content">
+    <h1>Welcome to Admin Dashboard</h1>
+    <div class="dashboard">
+      <div class="dashboard-item" style="background-color:burlywood" [routerLink]="['/getusers']">
+        <h3>Total Users</h3>
+        <div class="dashboard-count" >{{ userCount }}</div>
+      </div>
+      <div class="dashboard-item" style="background-color:burlywood" [routerLink]="['/viewlistingadmin']">
+        <h3>Total Listings</h3>
+        <div class="dashboard-count">{{ propertyCount }}</div>
+      </div>
+    </div>
+
+  </div>

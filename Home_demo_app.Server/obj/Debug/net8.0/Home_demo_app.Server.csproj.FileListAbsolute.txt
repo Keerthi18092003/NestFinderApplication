@@ -9,7 +9,9 @@ C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Home_demo_app.Server.pdb
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\MailKit.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.AspNetCore.SpaProxy.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -47,7 +49,10 @@ C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\MimeKit.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\NETCore.MailKit.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -66,11 +71,13 @@ C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Security.Permissions.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\Twilio.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -146,6 +153,7 @@ C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -157,6 +165,7 @@ C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\Home_demo_app.Server.csproj.CoreCompileInputs.cache
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\Home_demo_app.Server.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\Home_demo_app.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\Home_demo_app.Server.sourcelink.json
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Saich\source\repos\Home_demo_app\Home_demo_app.Server\obj\Debug\net8.0\staticwebassets\msbuild.Home_demo_app.Server.Microsoft.AspNetCore.StaticWebAssets.props

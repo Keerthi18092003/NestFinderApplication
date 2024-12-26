@@ -72,9 +72,21 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[7.8.0, )"
             }
           },
           "imports": [

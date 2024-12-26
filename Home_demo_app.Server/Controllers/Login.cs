@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace Home_demo_app.Server.Controllers
 {
@@ -11,9 +15,11 @@ namespace Home_demo_app.Server.Controllers
 	public class Login : ControllerBase
 	{
 		private readonly DataContext dbc;
-		public Login(DataContext dbc)
+		private readonly IConfiguration conf;
+		public Login(DataContext dbc, IConfiguration conf)
 		{
 			this.dbc = dbc;
+			this.conf = conf;
 		}
 		[HttpPost]
 		public IActionResult User_Login([FromBody] LoginRequest request)
@@ -25,13 +31,16 @@ namespace Home_demo_app.Server.Controllers
 
 			var user = dbc.Regs
 				.FirstOrDefault(u => u.Email == request.Email && u.Password == request.Password);
-
 			if (user == null)
 			{
-				return Unauthorized("Invalid email or password.");
+				return Unauthorized("Invalid credentials.");
 			}
 
-			return Ok("Login successful.");
+			return Ok(new
+			{
+				message = "Login successful!",
+				userId = user.Id,
+			});
 		}
 	}
 }

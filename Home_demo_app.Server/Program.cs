@@ -14,6 +14,16 @@ namespace Home_demo_app.Server
 			// Add services to the container.
 
 			builder.Services.AddControllers();
+			builder.Services.AddSession(options =>
+			{
+				options.IdleTimeout = TimeSpan.FromMinutes(30); // Adjust timeout
+				options.Cookie.HttpOnly = true;
+				options.Cookie.IsEssential = true;
+				options.Cookie.SameSite = SameSiteMode.None;  // For cross-origin requests
+				options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+			});
+
+			builder.Services.AddDistributedMemoryCache();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
@@ -40,8 +50,11 @@ namespace Home_demo_app.Server
 			{
 				options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
 			});
+			
 
 			var app = builder.Build();
+			app.UseSession();
+			app.UseAuthentication();
 
 			app.UseDefaultFiles();
 			app.UseStaticFiles();

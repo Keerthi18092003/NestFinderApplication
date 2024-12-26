@@ -1,0 +1,57 @@
+<app-owner-layout></app-owner-layout>
+
+<div *ngIf="isLoading" class="loading">
+  <p>Loading...</p>
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+  <p>{{ errorMessage }}</p>
+</div>
+
+<div *ngIf="acceptedApplications.length > 0; else noAcceptedApplications">
+  <table class="application-table">
+    <thead>
+      <tr>
+        <th>Property Type</th>
+        <th>Status</th>
+        <th>Submitted At</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let app of acceptedApplications">
+        <td>
+          <!-- Clicking on property type shows property details -->
+          <span class="clickable" (click)="showPropertyDetails(app.property)">
+            {{ app.property.propertyType }}
+          </span>
+        </td>
+        <td>{{ app.status }}</td>
+        <td>{{ app.submittedAt | date: 'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noAcceptedApplications>
+  <div class="no-data">
+    <p>No accepted applications found.</p>
+  </div>
+</ng-template>
+
+<div *ngIf="selectedProperty" class="property-details">
+  <h2>Property Details</h2>
+  <div class="property-info">
+    <p><strong>Type:</strong> {{ selectedProperty.propertyType }}</p>
+    <p><strong>Price:</strong> {{ selectedProperty.price | currency: 'INR' }}</p>
+    <p><strong>Location:</strong> {{ selectedProperty.street }}, {{ selectedProperty.city }} - {{ selectedProperty.pincode }}</p>
+    <p><strong>Rooms:</strong> {{ selectedProperty.rooms }}</p>
+  </div>
+  <div class="property-images">
+    <h3>Property Images</h3>
+    <div class="image-gallery">
+      <img *ngFor="let img of selectedProperty.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
+    </div>
+  </div>
+</div>
+

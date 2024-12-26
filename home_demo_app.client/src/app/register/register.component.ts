@@ -1,20 +1,37 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { inject } from '@angular/core';
+
+function emailWithMinLengthValidator(control: AbstractControl): ValidationErrors | null {
+  const email = control.value;
+  if (email && email.includes('@')) {
+    const localPart = email.split('@')[0];
+    if (localPart.length < 3) {
+      return { minLocalPartLength: 'Email must have at least 3 characters before "@"' };
+    }
+  }
+  return null;
+}
+
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, AsyncPipe, ReactiveFormsModule, CommonModule],
+  imports: [RouterOutlet, HttpClientModule, AsyncPipe, ReactiveFormsModule, CommonModule,RouterModule],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
+
 export class RegisterComponent {
   
   http = inject(HttpClient);
+  router = inject(Router);
+
+  
   
   registersForm = new FormGroup({
     name: new FormControl('', {
@@ -24,9 +41,11 @@ export class RegisterComponent {
       ],
       nonNullable: true
     }),
+
     email: new FormControl('', {
-      validators: [Validators.required, Validators.email],
+      validators: [Validators.required, Validators.email, emailWithMinLengthValidator],
       nonNullable: true
+
     }),
     phoneNumber: new FormControl('', {
       validators: [
@@ -114,7 +133,7 @@ export class RegisterComponent {
       this.http.post('https://localhost:7261/api/Registration', userDetails).subscribe({
         next: () => {
           alert('Registration successful!');
-          this.registersForm.reset();
+          this.router.navigate(['/login']);
         },
         error: (err) => {
           console.error(err);

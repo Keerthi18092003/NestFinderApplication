@@ -48,6 +48,9 @@ namespace Home_demo_app.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
                     b.PrimitiveCollection<string>("Images")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -91,33 +94,27 @@ namespace Home_demo_app.Server.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ConfirmPassword")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Gender")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsSuspended")
+                    b.Property<bool?>("IsSuspended")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -134,6 +131,9 @@ namespace Home_demo_app.Server.Migrations
                     b.Property<string>("Comments")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PropertyId")
                         .HasColumnType("uniqueidentifier");
@@ -156,6 +156,31 @@ namespace Home_demo_app.Server.Migrations
                     b.ToTable("Appssubmit");
                 });
 
+            modelBuilder.Entity("Home_demo_app.Server.Models.Tenant_Module.Notify", b =>
+                {
+                    b.Property<Guid>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NotificationId");
+
+                    b.HasIndex("Id");
+
+                    b.ToTable("Notifys");
+                });
+
             modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appsubmit", b =>
                 {
                     b.HasOne("Home_demo_app.Server.Models.Addprop", "Property")
@@ -165,6 +190,16 @@ namespace Home_demo_app.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("Property");
+                });
+
+            modelBuilder.Entity("Home_demo_app.Server.Models.Tenant_Module.Notify", b =>
+                {
+                    b.HasOne("Home_demo_app.Server.Models.Domain.User_Reg", "Reg")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Reg");
                 });
 #pragma warning restore 612, 618
         }

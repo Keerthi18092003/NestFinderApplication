@@ -15,7 +15,7 @@ export class PropertyService {
     return this.http.get<any[]>(`${this.apiUrl}/view`);
   }
   addProperty(property: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/add`, property); // Endpoint for adding a new property
+    return this.http.post(`${this.apiUrl}/Add`, property); // Endpoint for adding a new property
   }
 
   // Update an existing property
@@ -37,6 +37,12 @@ export class PropertyService {
         throw error; // Re-throw the error to be handled by the component
       })
     );
+  }
+  getFilteredProperties(type: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/filter?type=${type}`);
+  }
+  getUserProperties(userId: string): Observable<any> {
+    return this.http.get<any[]>(`${this.apiUrl}/view/${userId}`);
   }
 }
 

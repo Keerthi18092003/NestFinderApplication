@@ -1,46 +1,55 @@
 <app-admin-layout></app-admin-layout>
-<div *ngIf="loading" class="text-center">Loading users...</div>
+<div class="container">
+  <div *ngIf="loading" class="text-center">Loading users...</div>
 
-<div *ngIf="!loading && users.length === 0" class="text-center">No users found.</div>
+  <div *ngIf="!loading && users.length === 0" class="text-center">No users found.</div>
 
-<div *ngIf="!loading && users.length > 0">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>PhoneNumber</th>
-        <th>Gender</th>
-        <th>DateOfBirth</th>
-        <th>Password</th>
-        <th>Suspend</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let user of users">
-        <td>{{ user.id }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.email }}</td>
-        <td>{{user.phoneNumber}}</td>
-        <td>{{user.gender}}</td>
-        <td>{{ user.dateOfBirth}}</td>
-        <td>{{user.password}}</td>
-        <td>
-          <button *ngIf="!user.isSuspended"
-                  class="btn btn-warning btn-sm"
-                  (click)="suspendUser(user.id)">
-            Suspend
-          </button>
-        </td>
-        <td>
-          <button class="btn btn-danger btn-sm"
-                  (click)="deleteUser(user.id)" style="color:black">
-            Delete
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div *ngIf="!loading && users.length > 0">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>PhoneNumber</th>
+          <th>Gender</th>
+          <th>DateOfBirth</th>
+         
+          <th>Suspend</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{user.phoneNumber}}</td>
+          <td>{{user.gender}}</td>
+          <td>{{ user.dateOfBirth}}</td>
+          
+          <td>
+            <button *ngIf="!user.isSuspended"
+                    class="btn btn-primary btn-sm"
+                    (click)="WarningUser(user.id)" style="color:black">
+              Warning
+            </button>
+          </td>
+          <td>
+            <button *ngIf="!user.isSuspended"
+                    class="btn btn-warning btn-sm"
+                    (click)="suspendUser(user.id)" style="color:black">
+              Suspend
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger btn-sm"
+                    (click)="deleteUser(user.id)" style="color:black">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

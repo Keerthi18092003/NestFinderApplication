@@ -22,13 +22,13 @@
         <td>{{ application.status }}</td>
         <td>
           <button *ngIf="application.status === 'Pending'"
-                  (click)="acceptApplication(application.applicationId)"
-                  class="btn btn-success">
+                  (click)="acceptApplication(application.applicationId)" 
+                  class="btn btn-success" style="color:black">
             Accept
           </button>
           <button *ngIf="application.status === 'Pending'"
                   (click)="rejectApplication(application.applicationId)"
-                  class="btn btn-danger">
+                  class="btn btn-danger"  style="color:black">
             Reject
           </button>
         </td>

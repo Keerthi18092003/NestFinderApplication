@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -21,11 +21,20 @@ import { ViewappsubmissionComponent } from './viewappsubmission/viewappsubmissio
 import { OwnerLayoutComponent } from './layout/owner-layout/owner-layout.component';
 import { TenantLayoutComponent } from './layout/tenant-layout/tenant-layout.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
+import { ApplicationstatusComponent } from './applicationstatus/applicationstatus.component';
+import { AcceptedapplicationsComponent } from './acceptedapplications/acceptedapplications.component';
+import { ViewpendingappsownerComponent } from './viewpendingappsowner/viewpendingappsowner.component';
+import { ViewacceptappsownerComponent } from './viewacceptappsowner/viewacceptappsowner.component';
+import { ViewappsadminComponent } from './viewappsadmin/viewappsadmin.component';
+import { LocatesuggestComponent } from './locatesuggest/locatesuggest.component';
+//import { NgxPageScrollModule } from 'ngx-page-scroll';
+
 
 
 
 @NgModule({
   declarations: [
+   
     AppComponent,
     AdminComponent,
     HomeComponent,
@@ -40,14 +49,21 @@ import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.compone
     ViewappsubmissionComponent,
     OwnerLayoutComponent,
     TenantLayoutComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    ApplicationstatusComponent,
+    AcceptedapplicationsComponent,
+    ViewpendingappsownerComponent,
+    ViewacceptappsownerComponent,
+    ViewappsadminComponent,
+    LocatesuggestComponent,
   ],
   imports: [
     BrowserModule, HttpClientModule,
     AppRoutingModule, FormsModule
   ],
   
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

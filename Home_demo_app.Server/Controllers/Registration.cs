@@ -12,8 +12,7 @@ namespace Home_demo_app.Server.Controllers
 	public class Registration : ControllerBase
 	{
 		private readonly DataContext dbc;
-		private readonly IEmailService _emailService;
-		public Registration(DataContext dbc, IEmailService emailService)
+		public Registration(DataContext dbc)
 		{
 			this.dbc = dbc;
 		}

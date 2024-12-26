@@ -7,5 +7,4 @@ export interface Register {
   dateOfBirth: Date,
   password: string,
   confirmPassword: string
-
 }

@@ -62,8 +62,8 @@
           <div class="join-us-dropdown">
             <button class="header-top-btn">JOIN US</button>
             <div class="dropdown-menu">
-              <a routerLink="/owner" class="dropdown-link">Owner</a>
-              <a routerLink="/admin" class="dropdown-link">Admin</a>
+              <a routerLink="/login" class="dropdown-link">Owner</a>
+              <a routerLink="/login" class="dropdown-link">Admin</a>
             </div>
           </div>
         </div>
@@ -100,19 +100,20 @@
               </li>
 
               <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                <a [routerLink]="['/about']" (click)="navigateToSection('about')" fragment="about" class="navbar-link">About</a>
+              </li>
+
+
+              <li>
+                <a [routerLink]="['/service']" (click)="navigateToSection('service')" fragment="service" class="navbar-link">Service</a>
               </li>
 
               <li>
-                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                <a [routerLink]="['/property']" (click)="navigateToSection('property')" fragment="property" class="navbar-link">Property</a>
               </li>
 
               <li>
-                <a href="#property" class="navbar-link" data-nav-link>Property</a>
-              </li>
-
-              <li>
-                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                <a [routerLink]="['/contact']" (click)="navigateToSection('contact')" fragment="contact" class="navbar-link">Contact</a>
               </li>
 
             </ul>
@@ -130,10 +131,8 @@
 
           <div class="spacer"></div> <!-- Spacer to push icons to the right -->
           <!-- Existing Icons -->
-         
 
-
-          <a routerLink="/owner" class="rent-out-btn" aria-label="Rent Out">
+          <a routerLink="/login" class="rent-out-btn" aria-label="Rent Out">
 
             <span>Rent Out</span>
           </a>
@@ -150,8 +149,8 @@
     <article>
 
       <!--
-        - #HERO
-      -->
+    - #HERO
+  -->
 
       <section class="hero" id="home">
         <div class="container">
@@ -159,7 +158,7 @@
           <div class="hero-content">
 
             <p class="hero-subtitle">
-              
+
               <span>Housing Rental Agency</span>
             </p>
 
@@ -169,7 +168,8 @@
               Discover your perfect rental effortlessly with NestFinder—where innovation meets convenience to redefine how you find your perfect home.
             </p>
 
-            <button class="btn">Make An Enquiry</button>
+            <button class="btn" (click)="sendEmail()">Make An Enquiry</button>
+
 
           </div>
 
@@ -185,8 +185,8 @@
 
 
       <!--
-        - #ABOUT
-      -->
+    - #ABOUT
+  -->
 
       <section class="about" id="about">
         <div class="container">
@@ -211,35 +211,32 @@
 
               <li class="about-item">
                 <div class="about-item-icon">
-                  
+                  <i class="fas fa-search"></i>
                 </div>
-
                 <p class="about-item-text">Personalized Rental Suggestions</p>
               </li>
 
               <li class="about-item">
                 <div class="about-item-icon">
-                  
+                  <i class="fas fa-map-marker-alt"></i>
                 </div>
-
                 <p class="about-item-text">Location-Based Property Insights</p>
               </li>
 
               <li class="about-item">
                 <div class="about-item-icon">
-                  
+                  <i class="fas fa-home"></i>
                 </div>
-
                 <p class="about-item-text">Hassle-Free Property Listings</p>
               </li>
 
               <li class="about-item">
                 <div class="about-item-icon">
-                  
+                  <i class="fas fa-comments"></i>
                 </div>
-
-                <p class="about-item-text">AI-Powered Lease Agreements</p>
+                <p class="about-item-text">Seamless Communication</p>
               </li>
+
 
             </ul>
 
@@ -248,7 +245,7 @@
 
             </p>
 
-            <a href="#service" class="btn">Our Services</a>
+            <a [routerLink]="['/service']" (click)="navigateToSection('service')" fragment="service" class="btn">Our Services</a>
 
           </div>
 
@@ -260,8 +257,8 @@
 
 
       <!--
-        - #SERVICE
-      -->
+    - #SERVICE
+  -->
 
       <section class="service" id="service">
         <div class="container">
@@ -287,10 +284,10 @@
                   Explore a wide range of houses available for rent, tailored to suit your needs and preferences.
                 </p>
 
-                <a href="#" class="card-link">
+                <a [routerLink]="['/tenant/house']" class="card-link">
                   <span>Find A Home</span>
 
-                  
+
                 </a>
 
               </div>
@@ -311,10 +308,10 @@
                   Find the perfect apartment for rent with options that fit your lifestyle, from studio apartments to luxurious ones.
                 </p>
 
-                <a href="#" class="card-link">
+                <a [routerLink]="['/tenant/apartment']" class="card-link">
                   <span>Find A Home</span>
 
-                  
+
                 </a>
 
               </div>
@@ -335,10 +332,10 @@
                   Explore affordable PG (Paying Guest) accommodations perfect for students and professionals.
                 </p>
 
-                <a href="#" class="card-link">
+                <a [routerLink]="['/tenant/pg']" class="card-link">
                   <span>Find A Home</span>
 
-                  
+
                 </a>
 
               </div>
@@ -355,8 +352,8 @@
 
 
       <!--
-        - #PROPERTY
-      -->
+    - #PROPERTY
+  -->
 
       <section class="property" id="property">
         <div class="container">
@@ -367,468 +364,84 @@
 
           <ul class="property-list has-scrollbar">
 
-            <li>
-              <div class="property-card">
 
-                <figure class="card-banner">
+            <li *ngFor="let property of properties; let i = index" class="property-card">
 
+              <figure class="card-banner">
+
+                <div *ngIf="property.images?.length > 0">
                   <a href="#">
-                    <img src=" images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+                    <img [src]="'http://localhost:5043/' + property.images[0]" alt="Property Image" class="w-100">
                   </a>
-                  <div class="banner-actions">
+                </div>
+                <div class="banner-actions">
 
-                    <button class="banner-actions-btn">
-                      
+                  <button class="banner-actions-btn">
 
-                      <address>chicago</address>
-                    </button>                    
-                  </div>
 
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>Rs.34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">New Apartment Nice View</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                     
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
+                    <address>{{ property.street }}, {{ property.city }}</address>
+                  </button>
                 </div>
 
-                <div class="card-footer">
+              </figure>
 
-                  <div class="card-author">
+              <div class="card-content">
 
-                    <figure class="author-avatar">
-                      <img src=" images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                  </div>
-
+                <div class="card-price">
+                  <strong>{{ property.price | currency:'INR' }}</strong>/Month
                 </div>
+
+                <h3 class="h3 card-title">
+                  <a [routerLink]="['/applicationsubmit', property.propertyId]">
+                    {{ property.propertyType }}
+                  </a>
+                </h3>
+                <p class="card-text">
+                  {{
+ property.description | slice: 0:100
+                  }}
+                </p>
+
+                <ul class="card-list">
+
+                  <li class="card-item">
+                    <strong>{{ property.bedrooms }}</strong>
+
+
+
+                    <span>Bedrooms</span>
+                  </li>
+
+                  <li class="card-item">
+                    <strong>{{ property.rooms }}</strong>
+
+
+
+                    <span>Total Rooms</span>
+                  </li>
+
+                  <li class="card-item">
+                    <strong>{{ property.area }}</strong>
+
+
+
+                    <span>Square Ft</span>
+                  </li>
+
+                </ul>
 
               </div>
+
+
+
+
             </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src=" images/property-2.jpg" alt="Modern Apartments" class="w-100">
-                  </a>
-
-                  <div class="card-badge orange">For Sales</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                     
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                     
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>Rs.34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Modern Apartments</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src=" images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src=" images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>Rs.34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Comfortable Apartment</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src=" images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                     
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src=" images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>Rs.34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Luxury villa in Rego Park</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                     
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                     
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                     
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src=" images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                     
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                     
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
           </ul>
-
         </div>
       </section>
       <!--
-      #Infoforlistproperty
-      -->
+  #Infoforlistproperty
+  -->
 
       <section class="how-to-list">
         <div class="container">
@@ -836,7 +449,7 @@
           <div class="steps-container">
             <div class="step">
               <div class="icon-wrapper">
-                
+                <i class="fas fa-user-plus"></i> <!-- Icon for Register -->
                 <span class="step-number">01</span>
               </div>
               <h3 class="step-title">Register</h3>
@@ -849,7 +462,7 @@
             </div>
             <div class="step">
               <div class="icon-wrapper">
-                
+                <i class="fas fa-home"></i> <!-- Icon for Add Property Details -->
                 <span class="step-number">02</span>
               </div>
               <h3 class="step-title">Add Property Details</h3>
@@ -862,7 +475,7 @@
             </div>
             <div class="step">
               <div class="icon-wrapper">
-                
+                <i class="fas fa-upload"></i> <!-- Icon for Publish Property -->
                 <span class="step-number">03</span>
               </div>
               <h3 class="step-title">Publish Property</h3>
@@ -872,9 +485,10 @@
         </div>
       </section>
 
+
       <!--
-          - #CTA
-        -->
+      - #CTA
+    -->
 
       <section class="cta">
         <div class="container">
@@ -900,191 +514,178 @@
      - #FOOTER
    -->
 
-  <footer class="footer">
+  <section class="contact" id="contact">
+    <footer class="footer">
 
-    <div class="footer-top">
-      <div class="container">
+      <div class="footer-top">
+        <div class="container">
 
-        <div class="footer-brand">
+          <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src=" images/logo-light.png" alt="Homeverse logo">
-          </a>
+            <a href="#" class="logo">
+              <img src="/images/logonestfinder1.png" alt="Homeverse logo">
+            </a>
 
-          <p class="section-text">
-            Where Home Meets Convenience
+            <p class="section-text">
+              Where Home Meets Convenience
+            </p>
+
+            <ul class="contact-list">
+
+              <li>
+                <a href="#" class="contact-link">
+
+
+                  <address>Kalasalingam University,Madurai</address>
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:+91 9398336421" class="contact-link">
+
+
+                  <span>+91 9398336421</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:nestfinderinfo@gmail.com" class="contact-link">
+
+
+                  <span>nestfinderinfogmail.com</span>
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-link-box">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">About</a>
+              </li>
+
+              
+
+              
+
+              <li>
+                <a href="#" class="footer-link">Locations Map</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Contact us</a>
+              </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
+
+              
+
+              
+
+              <li>
+                <a href="#" class="footer-link">Login</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">My account</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+
+              
+
+            </ul>
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Customer Care</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Login</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">My account</a>
+              </li>
+
+             
+
+              
+
+              <li>
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Contact us</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+
+          <p class="copyright">
+            &copy; 2022 <a href="#">Team NovaNinjas</a>. All Rights Reserved
           </p>
 
-          <ul class="contact-list">
-
-            <li>
-              <a href="#" class="contact-link">
-                
-
-                <address>Kalasalingam University,Madurai</address>
-              </a>
-            </li>
-
-            <li>
-              <a href="tel:+91 9398336421" class="contact-link">
-                
-
-                <span>+91 9398336421</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:nestfinderinfo@gmail.com" class="contact-link">
-                
-
-                <span>nestfinderinfogmail.com</span>
-              </a>
-            </li>
-
-          </ul>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                
-              </a>
-            </li>
-
-          </ul>
-
         </div>
-
-        <div class="footer-link-box">
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Company</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">About</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">All Products</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Locations Map</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Order tracking</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Wish List</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Login</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">My account</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms & Conditions</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Promotional Offers</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Customer Care</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Login</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">My account</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Wish List</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Order tracking</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
-        </div>
-
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2022 <a href="#">Team NovaNinjas</a>. All Rights Reserved
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
+    </footer>
+</section>

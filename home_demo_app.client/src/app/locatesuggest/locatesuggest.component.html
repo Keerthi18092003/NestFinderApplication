@@ -1,0 +1,45 @@
+<app-tenant-layout></app-tenant-layout>
+
+<div class="container mt-4">
+  <h2>Recommended Properties Near You</h2>
+
+  <!-- Loading Indicator -->
+  <div *ngIf="!userLocation" class="text-center">
+    <p>Fetching your location...</p>
+  </div>
+
+  <!-- Nearby Properties List -->
+  <div class="row" *ngIf="nearbyProperties.length > 0">
+    <div class="col-md-4" *ngFor="let property of nearbyProperties">
+      <div class="listing-card">
+        <div class="horizontal-scroll">
+          <div class="scroll-container">
+            <div *ngFor="let image of property.images" class="carousel-cell">
+              <img [src]="'http://localhost:5043/' + image" alt="Property Image" />
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="card-price">
+            <strong>{{ property.price | currency: 'INR' }}</strong> / Month
+          </p>
+          <h5 class="card-title">
+            <a [routerLink]="['/applicationsubmit', property.propertyId]">{{ property.propertyType }}</a>
+          </h5>
+          <p class="card-text">{{ property.description | slice: 0:100 }}</p>
+          <div class="features">
+            <span>{{ property.bedrooms }} Bedrooms</span> |
+            <span>{{ property.rooms }} Rooms</span> |
+            <span>{{ property.area }} Sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Nearby Properties Found -->
+  <div *ngIf="nearbyProperties.length === 0 && userLocation" class="text-center mt-4">
+    <p>No properties found near your location.</p>
+  </div>
+</div>
+

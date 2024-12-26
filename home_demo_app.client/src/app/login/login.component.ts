@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule,FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { LoginResponse, LoginSessionService } from '../../services/loginsession.service';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports:[ReactiveFormsModule, FormsModule, CommonModule],
+  imports: [ReactiveFormsModule, FormsModule, CommonModule, RouterModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit{
 
   private adminEmail = 'nestfinder@gmail.com';
   private adminPassword = 'vkk@123456';
-   constructor(private fb: FormBuilder, private router: Router, private http: HttpClient) {
+   constructor(private fb: FormBuilder, private router: Router, private http: HttpClient,private loginService:LoginSessionService) {
      this.loginForm = this.fb.group({
        email: ['', [Validators.required, Validators.email]],
        password: ['', [Validators.required, Validators.minLength(8)]]
@@ -50,13 +51,20 @@ export class LoginComponent implements OnInit{
        this.router.navigate(['/admin']);  // Redirect to AdminComponent
      }
      else {
-       this.http.post<string>('https://localhost:7261/api/Login', loginData, { responseType: 'text' as 'json' }).subscribe({
-         next: (response) => {
-           this.loginError = response;
-           this.loginSuccess = 'Login successful!';
-           console.log('Login successful:', response);
-           this.router.navigate(['/tenant']);
-         },
+       this.http
+         .post<any>('https://localhost:7261/api/Login', loginData)
+         .subscribe({
+           next: (response: any) => {
+             console.log('Response:',response);
+             if (response.userId) {
+               this.loginService.setUserId(response.userId); // Set userId
+               console.log('User ID set in sessionStorage:', response.userId);
+             } else {
+               console.error('userId is missing or undefined in the response.');
+             }
+             alert('Login successful!');
+             this.router.navigate(['/tenant']);
+           },
          error: (err) => {
            if (err.status === 401) {
              this.loginError = 'Invalid email or password.';
@@ -68,6 +76,7 @@ export class LoginComponent implements OnInit{
      }
    }
 }
+
 
 function error(err: any): void {
     throw new Error('Function not implemented.');

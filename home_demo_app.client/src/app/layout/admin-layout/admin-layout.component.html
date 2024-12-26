@@ -1,39 +1,72 @@
-<div class="admin-container">
-  <div class="sidebar">
-    <h2>Admin Dashboard</h2>
-    <div class="dropdown">
-      <button class="dropbtn">User Management</button>
-      <div class="dropdown-content">
-        <button (click)="viewUsers()">View All Users</button>
-        <button (click)="suspendAccount()">Suspend Account</button>
-      </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fas fa-user-tie"></i> Admin</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="dropdown">
-      <button class="dropbtn">Property Management</button>
-      <div class="dropdown-content">
-        <button (click)="viewProperties()">View Properties</button>
-        <button (click)="removeProperty()">Remove Fraudulent Listings</button>
-      </div>
-    </div>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin" routerLinkActive="active">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
 
-    <div class="dropdown">
-      <button class="dropbtn">Application Oversight</button>
-      <div class="dropdown-content">
-        <button (click)="trackApplications()">Track Applications</button>
-        <button (click)="resolveDispute()">Resolve Disputes</button>
-      </div>
-    </div>
+        <!-- User Management -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             href="#"
+             id="userDropdown"
+             role="button"
+             data-bs-toggle="dropdown"
+             aria-expanded="false">
+            <i class="fas fa-user-cog"></i> User Management
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="userDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="/getusers" routerLinkActive="active">
+                <i class="fas fa-users"></i>View Users
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/suspendedusers" routerLinkActive="active">
+                <i class="fas fa-user-slash"></i> Suspended Accounts
+              </a>
+            </li>
+          </ul>
+        </li>
 
-    <div class="dropdown">
-      <button class="dropbtn">Support</button>
-      <div class="dropdown-content">
-        <button (click)="openHelpDesk()">Open Help Desk</button>
-        <button (click)="sendMessage()">FAQs Management</button>
-      </div>
+        <!-- Property Management -->
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/viewlistingadmin" routerLinkActive="active">
+            <i class="fas fa-building"></i> Property Management
+          </a>
+        </li>
+
+        <!-- Application Management -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/viewappsadmin" routerLinkActive="active">
+            <i class="fas fa-file-alt"></i> Application Management
+          </a>
+        </li>
+
+        
+        
+      </ul>
     </div>
   </div>
-  <div class="container mt-4">
-    <router-outlet></router-outlet>
-  </div>
+</nav>
+
+<!-- Content Area -->
+<div class="container mt-4">
+  <router-outlet></router-outlet>
 </div>

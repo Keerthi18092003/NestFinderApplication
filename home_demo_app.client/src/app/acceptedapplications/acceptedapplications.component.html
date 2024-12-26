@@ -1,0 +1,91 @@
+<app-tenant-layout></app-tenant-layout>
+
+<div *ngIf="loading" class="text-center">
+  <p>Loading...</p>
+</div>
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+  {{ errorMessage }}
+</div>
+
+<!-- Applications Table -->
+<div *ngIf="applications.length > 0" class="container mt-4">
+  <h2 class="mb-3">Accepted Applications</h2>
+
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Property Type</th>
+        <th>Contact Options</th>
+        <th>Status</th>
+        <th>Submitted At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let app of applications">
+        <!-- Property Type (Clickable Link) -->
+        <td>
+          <a href="#" (click)="showPropertyDetails(app)" class="text-primary">
+            {{ app.propertyType }}
+          </a>
+        </td>
+
+        <!-- Contact Options (Call and WhatsApp) -->
+        <td>
+          <button (click)="callOwner(app.mobileNumber)" class="btn btn-primary me-2" style="color: black">
+            Call
+          </button>
+          <button (click)="openWhatsApp(
+            app.ownerName,
+            app.ownerGender,
+            app.propertyType,
+            app.mobileNumber
+          )" class="btn btn-success" style="color: black">
+            WhatsApp
+          </button>
+        </td>
+
+        <!-- Status -->
+        <td>{{ app.status }}</td>
+
+        <!-- Submission Date -->
+        <td>{{ app.submittedAt | date: 'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- No Applications Found -->
+<div *ngIf="applications.length === 0 && !loading" class="text-center mt-4">
+  <p>No accepted applications found.</p>
+</div>
+
+<!-- Property Details Section -->
+<div *ngIf="selectedProperty" class="container mt-4">
+  <h3>Property Details</h3>
+  <div class="card">
+    <div class="card-body">
+      <p><strong>Type:</strong> {{ selectedProperty.propertyType }}</p>
+      <p><strong>Price:</strong> {{ selectedProperty.price | currency: 'INR' }}</p>
+      <p><strong>Location:</strong> {{ selectedProperty.street }}, {{ selectedProperty.city }} - {{ selectedProperty.pincode }}</p>
+      <p><strong>Description:</strong> {{ selectedProperty.description }}</p>
+      <p><strong>Rental Terms:</strong> {{ selectedProperty.rentalTerms || 'Not specified' }}</p>
+      <p><strong>Bedrooms:</strong> {{ selectedProperty.bedrooms }}</p>
+      <p><strong>Rooms:</strong> {{ selectedProperty.rooms }}</p>
+      <p><strong>Area (sq.ft.):</strong> {{ selectedProperty.area }}</p>
+      <p><strong>Furnished:</strong> {{ selectedProperty.furnished === 'Yes' ? 'Yes' : 'No' }}</p>
+      <p><strong>Contact:</strong> {{ selectedProperty.mobileNumber }}</p>
+    </div>
+    <div class="property-images">
+      <h3>Property Images</h3>
+      <div class="image-gallery">
+        <img *ngFor="let img of selectedProperty.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Close Details Button -->
+  <div class="mt-3 text-end">
+    <button class="btn btn-secondary" (click)="selectedProperty = null">Close Details</button>
+  </div>
+</div>

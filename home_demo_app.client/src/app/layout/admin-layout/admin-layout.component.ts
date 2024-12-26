@@ -1,51 +1,83 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  ComponentFactoryResolver,
+  OnInit,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 import { Router } from '@angular/router';
+import { GetusersComponent } from '../../getusers/getusers.component';
+import { SuspendedusersComponent } from '../../suspendedusers/suspendedusers.component';
+import { ViewlistingadminComponent } from '../../viewlistingadmin/viewlistingadmin.component';
 
 @Component({
   selector: 'app-admin-layout',
   standalone: false,
   templateUrl: './admin-layout.component.html',
-  styleUrl: './admin-layout.component.css'
+  styleUrls: ['./admin-layout.component.css'],
 })
-export class AdminLayoutComponent {
-  constructor(private router: Router) { }
+export class AdminLayoutComponent implements OnInit {
+  @ViewChild('dynamiComponentContainer', { read: ViewContainerRef })
+  dynamicComponentContainer!: ViewContainerRef;
+
+  constructor(
+    private router: Router,
+    private componentFactoryResolver: ComponentFactoryResolver
+  ) { }
+
+  ngOnInit(): void { }
+
+  loadComponent(section: string) {
+    this.dynamicComponentContainer.clear();
+    if (section === 'view') {
+      this.viewUsers();
+    }
+    else if (section === 'suspend') {
+      this.suspendAccount();
+    }
+    else if (section === 'view_prop') {
+      this.viewProperties();
+    }
+  }
+
   viewUsers(): void {
-    this.router.navigate(['/getusers']);
+    const componentFactory =
+      this.componentFactoryResolver.resolveComponentFactory(GetusersComponent);
+    this.dynamicComponentContainer.createComponent(componentFactory);
   }
 
-  suspendAccount(): void {
-    this.router.navigate(['/suspendedusers']);
+  // Other methods remain the same
+  suspendAccount():void {
+    const componentFactory =
+      this.componentFactoryResolver.resolveComponentFactory(SuspendedusersComponent);
+    // Clear previous components if needed
+    this.dynamicComponentContainer.createComponent(componentFactory);
   }
 
-  // Property Management methods
+
+  // Handles viewing all property listings
   viewProperties(): void {
-    this.router.navigate(['/viewlistingadmin']);
-  }
-
-  removeProperty(): void {
-    console.log('Remove Fraudulent Listings button clicked');
-
-  }
-
-  // Application Oversight methods
-  trackApplications(): void {
-    console.log('Track Applications button clicked');
+    const componentFactory =
+      this.componentFactoryResolver.resolveComponentFactory(ViewlistingadminComponent);
+    // Clear previous components if needed
+    this.dynamicComponentContainer.createComponent(componentFactory); 
+    
 
   }
-
-  resolveDispute(): void {
-    console.log('Resolve Disputes button clicked');
-
+  // Handles tracking rental applications
+  trackApplications() {
+    console.log('Opening applications...');
   }
 
-  // Communication and Support methods
-  openHelpDesk(): void {
-    console.log('Open Help Desk button clicked');
-  }
-
-  sendMessage(): void {
-    console.log('Send Message button clicked');
+  // Opens the help desk for user support
+  openHelpDesk() {
+    console.log('Opening help desk...');
 
   }
 
+  // Handles sending a message to users
+  sendMessage() {
+    console.log('Sending a message...');
+
+  }
 }

@@ -1,0 +1,66 @@
+<app-owner-layout></app-owner-layout>
+
+<div *ngIf="loading" class="loading">
+  <p>Loading...</p>
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+  <p>{{ errorMessage }}</p>
+</div>
+
+<div *ngIf="pendingApplications.length > 0; else noPendingApplications">
+  <table class="application-table">
+    <thead>
+      <tr>
+        <th>Application ID</th>
+        <th>Tenant Type</th>
+        <th>Status</th>
+        <th>Submitted At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let app of pendingApplications">
+        <td>
+          <!-- Clicking on application ID shows application details -->
+          <span class="clickable" (click)="showApplicationDetails(app)">
+            {{ app.propertyType }}
+          </span>
+        </td>
+        <td>{{ app.tenantType }}</td>
+        <td>{{ app.status }}</td>
+        <td>{{ app.submittedAt | date: 'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noPendingApplications>
+  <div class="no-data">
+    <p>No pending applications found.</p>
+  </div>
+</ng-template>
+
+<div *ngIf="selectedApplication" class="application-details">
+  <div class="application-info">
+    <h5>Property Details:</h5>
+    <ul>
+      <li><strong>Type:</strong> {{ selectedApplication.property.propertyDetails.propertyType }}</li>
+      <li><strong>Price:</strong> ₹{{ selectedApplication.property.propertyDetails.price }}</li>
+      <li>
+        <strong>Location:</strong> {{ selectedApplication.property.propertyDetails.street }},
+        {{ selectedApplication.property.propertyDetails.city }},
+      </li>
+      <li><strong>Bedrooms:</strong> {{ selectedApplication.property.propertyDetails.rooms }}</li>
+
+    </ul>
+    <div class="property-images">
+      <div class="image-gallery">
+        <img *ngFor="let img of selectedApplication.property.propertyDetails.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
+      </div>
+    </div>
+  </div>
+  <div class="action-buttons">
+    <button class="btn btn-success" (click)="acceptApplication(selectedApplication.applicationId)" style="color: black";>Accept</button>
+    <button class="btn btn-danger" (click)="rejectApplication(selectedApplication.applicationId)" style="color: black";>Reject</button>
+  </div>
+</div>

@@ -6,13 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AppsubmissionService {
-  private apiUrl = 'https://localhost:7261/api/Application'; 
+  private apiUrl = 'https://localhost:7261/api/Application';
 
   constructor(private http: HttpClient) { }
 
   submitApplication(applicationData: any): Observable<any> {
     return this.http.post(this.apiUrl, applicationData);
   }
+  getUserApplications(userId: string) {
+    return this.http.get<any[]>(`${this.apiUrl}/view/applications?userId=${userId}`);
+  }
+
   getApplications(propertyId: string): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/Applications/${propertyId}`);
   }
@@ -21,5 +25,25 @@ export class AppsubmissionService {
   }
   rejectApplication(applicationId: string): Observable<any> {
     return this.http.post(`${this.apiUrl}/Applications/${applicationId}/Reject`, {});
+  }
+  getAcceptedApplications(userId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/applications/accepted/${userId}`);
+  }
+  getPendingApplications(userId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/applications/pending?userId=${userId}`);
+  }
+  getPendingApplicationsOwner(ownerId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/applications/pending/owner?ownerId=${ownerId}`);
+  }
+  getAcceptedApplicationsOwner(ownerId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/applications/accepted/owner?ownerId=${ownerId}`);
+  }
+
+  getAdminApplications(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/viewapplications/admin`);
+  }
+
+  deleteApplication(applicationId: string): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/applications/delete/${applicationId}`);
   }
 }

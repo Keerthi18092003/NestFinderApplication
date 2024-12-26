@@ -1,9 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Home_demo_app.Server.Models
 {
 	public class Addpropdetails
 	{
+		[ForeignKey("Regs")]
+		public Guid Id { get; set; }
+
 		[Required(ErrorMessage = "Property type is required")]
 		public required string PropertyType { get; set; }
 

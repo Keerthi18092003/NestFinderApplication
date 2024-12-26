@@ -1,8 +1,15 @@
-<section class="vh-100" style="background-color: #4d443d;">
+<section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
         <div class="card" style="border-radius: 1rem; background-color: #d4ccc6;">
+          <div class="text-start p-3">
+            <a class="btn btn-outline-dark"
+               style="background-color: #6D712E; color: black;"
+               routerLink="/home">
+              <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+          </div>
           <div class="card-body p-4 p-lg-5 text-black">
             <form (ngSubmit)="onFormSubmit()" [formGroup]="registersForm">
               <div class="text-center mb-3 pb-1">
@@ -13,7 +20,7 @@
                        class="form-control"
                        name="name"
                        formControlName="name"
-                       placeholder="Full Name"/>
+                       placeholder="Full Name" />
                 <small *ngIf="registersForm.get('name')?.touched && registersForm.get('name')?.invalid" class="text-danger">
                   Name should only contain alphabets.
                 </small>
@@ -77,7 +84,7 @@
                            class="form-control"
                            name="password"
                            formControlName="password"
-                           placeholder="Password"/>
+                           placeholder="Password" />
                     <small *ngIf="registersForm.get('password')?.touched && registersForm.get('password')?.invalid" class="text-danger">
                       Password must contain at least one uppercase, one lowercase, one special character, and some digits.
                     </small>
@@ -102,7 +109,7 @@
                 </button>
               </div>
               <p class="mb-5 pb-lg-2">
-                Already have an account? <a routerLink="/login"  style="color:black;">Sign in here</a>
+                Already have an account? <a routerLink="/login" style="color:black;">Sign in here</a>
               </p>
             </form>
           </div>

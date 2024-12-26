@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -10,25 +11,26 @@ import { UserService } from '../../services/user.service';
 })
 export class GetusersComponent implements OnInit {
 
-  users: any[] = [];  // Array to hold user data
-  loading: boolean = true;  // Flag to manage loading state
+  users: any[] = [];  
+  loading: boolean = true;
+  message: string | null = null;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadUsers();  // Load users when the component initializes
+    this.loadUsers();  
   }
 
   // Method to fetch users from the backend API
   loadUsers(): void {
     this.userService.getUsers().subscribe({
       next: (data) => {
-        this.users = data;  // Store the fetched data in the users array
-        this.loading = false;  // Set loading to false once data is received
+        this.users = data;  
+        this.loading = false;  
       },
       error: (err) => {
         console.error('Error fetching users:', err);
-        this.loading = false;  // Set loading to false even if there is an error
+        this.loading = false;  
       }
     });
   }
@@ -65,5 +67,36 @@ export class GetusersComponent implements OnInit {
     }
   }
 
+  WarningUser(userId: string): void {
+    const user = this.users.find(u => u.id === userId);
+    console.log(user);
+    if (!user) {
+      this.message = 'User not found!';
+      return;
+    }
+
+    this.loading = true;
+    this.message = null;
+
+    
+    const emailPayload = {
+      to: user.email,
+      subject: 'Account Warning',
+      body: `Dear ${user.name},\n\nThis is a warning regarding your account. Further violations may result in suspension.\n\nThank you,\nNestFinder Team`
+    };
+
+    
+    this.http.post('https://localhost:7261/api/Email/send', emailPayload)
+      .subscribe({
+        next: (response: any) => {
+          this.message = `Warning email sent to ${user.email} successfully!`;
+          this.loading = false;
+        },
+        error: (err) => {
+          this.message = err.error.message || 'Failed to send warning email.';
+          this.loading = false;
+        }
+      });
+  }
 
 }

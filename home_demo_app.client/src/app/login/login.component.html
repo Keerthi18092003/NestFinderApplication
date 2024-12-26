@@ -11,6 +11,11 @@
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
+                <div class="mb-4">
+                  <a routerLink="/home" class="btn btn-outline-dark" style="background-color: #6D712E; color: Black;">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                  </a>
+                </div>
                 <div *ngIf="loginSuccess" class="alert alert-success">
                   {{ loginSuccess }}
                 </div>
@@ -54,15 +59,9 @@
                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg" type="submit" style="background-color: black; color: #6D712E;">Login</button>
                   </div>
 
-                  <a class="small text-muted" href="#!" style="color: black !important;">Forgot password?</a>
-
                   <p class="mb-5 pb-lg-2">
-                    Don't have an account? <a routerLink="/register"
-                                              style="color:black;">Register here</a>
+                    Don't have an account? <a routerLink="/register" style="color:black;">Sign Up here</a>
                   </p>
-                  <div *ngIf="loginError" class="alert alert-danger">
-                    {{ loginError }}
-                  </div>
 
                 </form>
 

@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { AppsubmissionService } from '../../services/appsubmission.service';
+import { LoginSessionService } from '../../services/loginsession.service';
 
 @Component({
   selector: 'app-applicationsubmit',
@@ -22,7 +23,7 @@ export class ApplicationsubmitComponent {
   errorMessage: string = '';
   zoomImage: string | null = null;
  
-  constructor(private propertyService: PropertyService, private router: Router, private http: HttpClient, private appsubmissionService: AppsubmissionService, private route: ActivatedRoute) { }
+  constructor(private propertyService: PropertyService, private router: Router, private http: HttpClient, private appsubmissionService: AppsubmissionService, private route: ActivatedRoute,private loginService:LoginSessionService) { }
 
   ngOnInit(): void {
     this.propertyId = this.route.snapshot.paramMap.get('id');
@@ -58,7 +59,14 @@ export class ApplicationsubmitComponent {
   }
  
   submitApplication(propertyId: string): void {
+    const id = this.loginService.getUserId();
+    console.log('Retrieved User ID:', id);
+    if (!id) {
+      alert('User not logged in!');
+      return;
+    }
     const application = {
+      id:id,
       propertyId:propertyId,  
       tenantType: this.applicationData.tenantType,
       comments: this.applicationData.comments,
@@ -82,6 +90,7 @@ export class ApplicationsubmitComponent {
   resetForm(): void {
     this.applicationData = { tenantType: '', comments: '' };
   }
+
 }
 
 

@@ -1,7 +1,6 @@
 <app-tenant-layout></app-tenant-layout>
 <div *ngFor="let property of properties" class="property-card">
   <div *ngIf="property.images?.length > 0">
-    <h4>Images:</h4>
     <div class="property-images">
       <div *ngFor="let image of property.images" class="property-image">
         <img [src]="'http://localhost:5043/'+image" alt="{{image}}" class="zoomable-image" (click)="openImage('http://localhost:5043/'+image)" />

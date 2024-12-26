@@ -19,6 +19,22 @@
   height: 100vh; /* Full viewport height */
   background-color: #f8f9fa; /* Optional background color for contrast */
 }
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fas fa-heart {
+  color: red;
+}
+
+.fas fa-heart-o {
+  color: gray;
+}
 
 
 

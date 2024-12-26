@@ -26,7 +26,9 @@ namespace Home_demo_app.Server.Controllers
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
+
 			
+
 			List<string> imagePaths = new List<string>();
 
 			
@@ -90,12 +92,11 @@ namespace Home_demo_app.Server.Controllers
 				
 				model.Images = imagePaths;
 			}
-
-
 			
 			var property = new Addprop
 			{
 				PropertyId = Guid.NewGuid(),
+				Id = model.Id,
 				PropertyType = model.PropertyType,
 				Price = model.Price,
 				Street = model.Street,
@@ -116,7 +117,29 @@ namespace Home_demo_app.Server.Controllers
 			await dbc.AddProps.AddAsync(property);
 			await dbc.SaveChangesAsync();
 
+			
+
 			return Ok(new { message = "Property added successfully!", propertyId = property.PropertyId });
+		}
+
+		[HttpGet("view/{id}")]
+		public async Task<IActionResult> GetUserProperties(Guid id)
+		{
+			var user = await dbc.Regs.FirstOrDefaultAsync(u => u.Id == id);
+			if (user == null)
+			{
+				return NotFound("User not found.");
+			}
+			var userProperties = await dbc.AddProps
+				.Where(p => p.Id == id) // Filter by UserId
+				.ToListAsync();
+
+			if (userProperties == null || !userProperties.Any())
+			{
+				return NotFound("No properties found for the user.");
+			}
+
+			return Ok(userProperties);
 		}
 
 		[HttpGet("view")]
@@ -139,6 +162,7 @@ namespace Home_demo_app.Server.Controllers
 				return BadRequest("Invalid property ID.");
 			}
 
+
 			// Find the property by ID
 			var property = await dbc.AddProps.FindAsync(id);
 			if (property == null)
@@ -156,6 +180,7 @@ namespace Home_demo_app.Server.Controllers
 			{
 				return BadRequest("Invalid property data.");
 			}
+
 
 			// Find the existing property by ID
 			var existingProperty = await dbc.AddProps.FindAsync(id);
@@ -238,6 +263,7 @@ namespace Home_demo_app.Server.Controllers
 		[Route("delete/{id:guid}")]
 		public IActionResult DeleteProperty(Guid id)
 		{
+
 			var property = dbc.AddProps.FirstOrDefault(p => p.PropertyId == id);
 
 			if (property == null)
@@ -250,7 +276,23 @@ namespace Home_demo_app.Server.Controllers
 
 			return Ok(); // Success response
 		}
-		
+
+		[HttpGet("filter")]
+		public IActionResult GetFilteredProperties(string type)
+		{
+			var filteredProperties = dbc.AddProps
+				.Where(p => p.PropertyType.ToLower() == type.ToLower())
+				.ToList();
+
+			if (filteredProperties == null || !filteredProperties.Any())
+			{
+				return NotFound("No properties found for the selected type.");
+			}
+
+			return Ok(filteredProperties);
+		}
+
+
 
 	}
 

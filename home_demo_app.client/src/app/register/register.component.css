@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #4d443d; /* Dark spruce background */
+}
+
+.vh-100 {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d443d;
+}
+

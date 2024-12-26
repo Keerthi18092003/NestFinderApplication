@@ -1,0 +1,14 @@
+/* Add to your component's CSS file */
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f8f9fa;
+}

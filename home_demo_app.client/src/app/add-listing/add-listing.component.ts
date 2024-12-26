@@ -9,6 +9,7 @@ import { PropertyService } from '../../services/property.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { OwnerComponent } from '../owner/owner.component';
 import { OwnerLayoutComponent } from '../layout/owner-layout/owner-layout.component';
+import { LoginSessionService } from '../../services/loginsession.service';
 
 
 
@@ -30,7 +31,7 @@ export class AddListingComponent {
   addListingForm!: FormGroup;
 
   constructor(private route: ActivatedRoute, private http: HttpClient, private propertyService: PropertyService,
-    private fb: FormBuilder, private router: Router, private cdr: ChangeDetectorRef) {
+    private fb: FormBuilder, private router: Router, private cdr: ChangeDetectorRef,private loginService:LoginSessionService) {
     this.addListingForm = this.fb.group({
       propertyType: new FormControl('', { validators: [Validators.required], nonNullable: true }),
       price: new FormControl('', { validators: [Validators.required, Validators.min(1)], nonNullable: true }),
@@ -101,15 +102,30 @@ export class AddListingComponent {
   }
 
   addProperty(propDetails: any) {
-    this.propertyService.addProperty(propDetails).subscribe({
-      next: () => {
-        alert('Property added successfully!');
-        this.addListingForm.reset();
-        this.router.navigate(['/view-listing']);
+    const id = this.loginService.getUserId();
+    console.log('Retrieved User ID:', id);
+    if (!id) {
+      alert('User not logged in!');
+      return;
+    }
+    const requestBody = { ...propDetails, id };
+    console.log('Request body being sent:', requestBody);
+    console.log('Property details to be added:', propDetails);
+    this.propertyService.addProperty(requestBody).subscribe({
+      next: (response) => {
+        if (response.propertyId) {
+          alert(`Property added successfully! Property ID: ${response.propertyId}`);
+          this.addListingForm.reset();  // Reset the form
+          this.router.navigate(['/view-listing']); // Navigate to the listings view
+        } else {
+          alert('Property added successfully, but no propertyId received.');
+        }
       },
       error: (err) => {
+        // Improved error handling
         console.error(err);
-        alert(`Adding property failed: ${err.message}`);
+        const errorMessage = err?.message || 'An error occurred while adding the property.';
+        alert(`Adding property failed: ${errorMessage}`);
       }
     });
   }

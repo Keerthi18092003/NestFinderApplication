@@ -14,24 +14,65 @@
 
       <!-- Property Search Link -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="/find-properties"><i class="fas fa-search"></i> Find Properties</a>
+        <a class="nav-link" routerLink="/tenant"><i class="fas fa-search"></i> Find Properties</a>
       </li>
 
       <!-- Application Status Link -->
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/application-status"><i class="fas fa-info-circle"></i> Application Status</a>
-      </li>
-
-      <!-- Notifications Link -->
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/notifications"><i class="fas fa-bell"></i> Notifications</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="applicationDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          <i class="fas fa-clipboard-list"></i> Application Status
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="applicationDropdown">
+          <li>
+            <a class="dropdown-item" routerLink="/applicationstatus" routerLinkActive="active">
+              <i class="fas fa-hourglass-half"></i> Pending Applications
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/acceptedapplications" routerLinkActive="active">
+              <i class="fas fa-check-circle"></i> Accepted Applications
+            </a>
+          </li>
+        </ul>
       </li>
 
       <!-- Account Settings Link -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="navbarDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          <i class="fas fa-user-cog"></i> Account
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" (click)="logout()">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" (click)="removeAccount()">
+              <i class="fas fa-user-minus"></i> Remove Account
+            </a>
+          </li>
+        </ul>
+      </li>
+      <div class="spacer"></div>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/account"><i class="fas fa-user-cog"></i> Account</a>
+        <a routerLink="/owner" class="nav-link rent-out-btn" aria-label="Rent Out">
+          <i class="fas fa-home"></i>
+          <span>Rent Out</span>
+        </a>
       </li>
     </ul>
+    
   </div>
 </nav>
 

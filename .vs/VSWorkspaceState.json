@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\home_demo_app.client\\public",
+    "\\home_demo_app.client\\public\\images",
+    "\\home_demo_app.client\\src",
+    "\\Home_demo_app.Server\\bin",
+    "\\Home_demo_app.Server\\Controllers",
+    "\\Home_demo_app.Server\\Infrastructure",
+    "\\Home_demo_app.Server\\Migrations",
+    "\\Home_demo_app.Server\\obj",
+    "\\Home_demo_app.Server\\wwwroot"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -13,9 +13,10 @@
     <thead>
       <tr>
         <th>Property Type</th>
+        <th>Comments</th>
         <th>Status</th>
         <th>Submitted At</th>
-        <th>Action</th>
+
       </tr>
     </thead>
     <tbody>
@@ -23,9 +24,10 @@
         <td>
           <!-- Clicking on property type shows property details -->
           <span class="clickable" (click)="showPropertyDetails(app.property)">
-            {{ app.property.propertyType }}
+            {{ app.propertyType }}
           </span>
         </td>
+        <td>{{app.comments}}</td>
         <td>{{ app.status }}</td>
         <td>{{ app.submittedAt | date: 'short' }}</td>
       </tr>
@@ -39,19 +41,4 @@
   </div>
 </ng-template>
 
-<div *ngIf="selectedProperty" class="property-details">
-  <h2>Property Details</h2>
-  <div class="property-info">
-    <p><strong>Type:</strong> {{ selectedProperty.propertyType }}</p>
-    <p><strong>Price:</strong> {{ selectedProperty.price | currency: 'INR' }}</p>
-    <p><strong>Location:</strong> {{ selectedProperty.street }}, {{ selectedProperty.city }} - {{ selectedProperty.pincode }}</p>
-    <p><strong>Rooms:</strong> {{ selectedProperty.rooms }}</p>
-  </div>
-  <div class="property-images">
-    <h3>Property Images</h3>
-    <div class="image-gallery">
-      <img *ngFor="let img of selectedProperty.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
-    </div>
-  </div>
-</div>
 

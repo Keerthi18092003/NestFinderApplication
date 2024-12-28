@@ -30,6 +30,7 @@ export class ViewacceptappsownerComponent {
     }
     this.appsubmissionService.getAcceptedApplicationsOwner(ownerId).subscribe(
       (data) => {
+        console.log(data);
         this.acceptedApplications = data;
         this.isLoading = false;
       },

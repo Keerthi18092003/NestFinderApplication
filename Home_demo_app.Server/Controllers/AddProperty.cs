@@ -1,11 +1,10 @@
 ﻿using Home_demo_app.Server.Infrastructure;
-using Home_demo_app.Server.Migrations;
 using Home_demo_app.Server.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.IO;  // For File-related methods
-using System.Threading.Tasks;  // For async methods
+using System.IO;  
+using System.Threading.Tasks;  
 
 namespace Home_demo_app.Server.Controllers
 {

@@ -156,31 +156,6 @@ namespace Home_demo_app.Server.Migrations
                     b.ToTable("Appssubmit");
                 });
 
-            modelBuilder.Entity("Home_demo_app.Server.Models.Tenant_Module.Notify", b =>
-                {
-                    b.Property<Guid>("NotificationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool?>("IsRead")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("NotificationId");
-
-                    b.HasIndex("Id");
-
-                    b.ToTable("Notifys");
-                });
-
             modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appsubmit", b =>
                 {
                     b.HasOne("Home_demo_app.Server.Models.Addprop", "Property")
@@ -190,16 +165,6 @@ namespace Home_demo_app.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("Property");
-                });
-
-            modelBuilder.Entity("Home_demo_app.Server.Models.Tenant_Module.Notify", b =>
-                {
-                    b.HasOne("Home_demo_app.Server.Models.Domain.User_Reg", "Reg")
-                        .WithMany()
-                        .HasForeignKey("Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("Reg");
                 });
 #pragma warning restore 612, 618
         }

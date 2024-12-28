@@ -4,9 +4,7 @@
   <p>Loading...</p>
 </div>
 
-<div *ngIf="errorMessage" class="error-message">
-  <p>{{ errorMessage }}</p>
-</div>
+
 
 <div *ngIf="pendingApplications.length > 0; else noPendingApplications">
   <table class="application-table">

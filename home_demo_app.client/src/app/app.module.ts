@@ -11,7 +11,6 @@ import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
 import { ViewListingComponent } from './view-listing/view-listing.component';
-import { LeaseagreementComponent } from './leaseagreement/leaseagreement.component';
 import { GetusersComponent } from './getusers/getusers.component';
 import { SuspendedusersComponent } from './suspendedusers/suspendedusers.component';
 import { ViewlistingadminComponent } from './viewlistingadmin/viewlistingadmin.component';
@@ -40,7 +39,6 @@ import { LocatesuggestComponent } from './locatesuggest/locatesuggest.component'
     HomeComponent,
     OwnerComponent,
     ViewListingComponent,
-    LeaseagreementComponent,
     GetusersComponent,
     SuspendedusersComponent,
     ViewlistingadminComponent,

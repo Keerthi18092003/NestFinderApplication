@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{F4245FA9-F018-4799-8320-3D0B32356EB2}|Home_demo_app.Server\\Home_demo_app.Server.csproj|solutionrelative:home_demo_app.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\services\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\services\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -93,14 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\app\\home\\home.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\home\\home.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|solutionrelative:home_demo_app.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22F9B212-6261-4151-BD0C-224B4663A5BE}|home_demo_app.client\\home_demo_app.client.esproj|c:\\users\\jhans\\home application\\nestfinder\\home_demo_app.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -439,53 +439,14 @@
               "RelativeDocumentMoniker": "Home_demo_app.Server\\appsettings.json",
               "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\Home_demo_app.Server\\appsettings.json",
               "RelativeToolTip": "Home_demo_app.Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-28T04:29:25.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "angular.json",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\angular.json",
-              "RelativeDocumentMoniker": "home_demo_app.client\\angular.json",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\angular.json",
-              "RelativeToolTip": "home_demo_app.client\\angular.json",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-28T04:09:34.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsubmission.service.ts",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
-              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
-              "RelativeToolTip": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T15:48:13.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "viewacceptappsowner.component.html",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
-              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
-              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvx0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-19T10:25:08.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "user.service.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\user.service.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\user.service.ts",
@@ -493,20 +454,32 @@
               "RelativeToolTip": "home_demo_app.client\\src\\services\\user.service.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T21:21:19.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T21:21:19.654Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "property.service.ts",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\property.service.ts",
-              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\property.service.ts",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\property.service.ts",
-              "RelativeToolTip": "home_demo_app.client\\src\\services\\property.service.ts",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAADAAAAAAAAAA==",
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T16:33:05.917Z",
+              "WhenOpened": "2024-12-16T19:04:24.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T19:04:31.392Z",
               "EditorCaption": ""
             },
             {
@@ -517,14 +490,62 @@
               "RelativeDocumentMoniker": "Home_demo_app.Server\\Program.cs",
               "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\Home_demo_app.Server\\Program.cs",
               "RelativeToolTip": "Home_demo_app.Server\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwFMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwFMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T17:03:20.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "viewacceptappsowner.component.html",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
+              "RelativeToolTip": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvx0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-19T10:25:08.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsubmission.service.ts",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\services\\appsubmission.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T15:48:13.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "angular.json",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\angular.json",
+              "RelativeDocumentMoniker": "home_demo_app.client\\angular.json",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\angular.json",
+              "RelativeToolTip": "home_demo_app.client\\angular.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-28T04:09:34.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "property.service.ts",
+              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\property.service.ts",
+              "RelativeDocumentMoniker": "home_demo_app.client\\src\\services\\property.service.ts",
+              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\services\\property.service.ts",
+              "RelativeToolTip": "home_demo_app.client\\src\\services\\property.service.ts",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T16:33:05.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "viewacceptappsowner.component.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.ts",
@@ -532,12 +553,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.ts",
               "ViewState": "AgIAABsAAAAAAAAAAAAgwCAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-19T10:26:12.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T10:26:12.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "applicationstatus.component.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.ts",
@@ -545,12 +565,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.ts",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T20:24:56.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T20:24:56.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "viewpendingappsowner.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewpendingappsowner\\viewpendingappsowner.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewpendingappsowner\\viewpendingappsowner.component.html",
@@ -558,12 +577,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\viewpendingappsowner\\viewpendingappsowner.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-19T08:13:39.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T08:13:39.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "login.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\login\\login.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\login\\login.component.html",
@@ -571,12 +589,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\login\\login.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-16T15:50:48.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T15:50:48.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "applicationstatus.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.html",
@@ -584,12 +601,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\applicationstatus\\applicationstatus.component.html",
               "ViewState": "AgIAABgAAAAAAAAAAAAAADgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-16T20:24:49.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T20:24:49.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "tenant-layout.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
@@ -597,12 +613,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\tenant-layout\\tenant-layout.component.html",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-16T20:41:00.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T20:41:00.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "acceptedapplications.component.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.ts",
@@ -610,12 +625,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-18T19:00:55.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T19:00:55.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "viewacceptappsowner.component.spec.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.spec.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.spec.ts",
@@ -623,12 +637,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.spec.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-20T05:10:23.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T05:10:23.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "viewacceptappsowner.component.css",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.css",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.css",
@@ -636,12 +649,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\viewacceptappsowner\\viewacceptappsowner.component.css",
               "ViewState": "AgIAAEcAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-28T02:54:28.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T02:54:28.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "acceptedapplications.component.css",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.css",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.css",
@@ -649,12 +661,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-17T17:22:14.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T17:22:14.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "acceptedapplications.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.html",
@@ -662,12 +673,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-17T17:16:53.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T17:16:53.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "owner-layout.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
@@ -675,12 +685,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\layout\\owner-layout\\owner-layout.component.html",
               "ViewState": "AgIAADwAAAAAAAAAAAAAADIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-17T19:40:48.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T19:40:48.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "acceptedapplications.component.spec.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.spec.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.spec.ts",
@@ -688,12 +697,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\acceptedapplications\\acceptedapplications.component.spec.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-28T02:50:39.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T02:50:39.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "locatesuggest.component.ts",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.ts",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.ts",
@@ -701,8 +709,7 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-23T04:57:27.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T04:57:27.131Z"
             },
             {
               "$type": "Document",
@@ -719,19 +726,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app.module.ts",
-              "RelativeToolTip": "home_demo_app.client\\src\\app\\app.module.ts",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T19:04:31.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "locatesuggest.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.html",
@@ -739,12 +733,11 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\locatesuggest\\locatesuggest.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-23T04:57:23.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T04:57:23.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "home.component.html",
               "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\home\\home.component.html",
               "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\home\\home.component.html",
@@ -752,21 +745,7 @@
               "RelativeToolTip": "home_demo_app.client\\src\\app\\home\\home.component.html",
               "ViewState": "AgIAAE0CAAAAAAAAAAAAAFkCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-17T04:44:00.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "app-routing.module.ts",
-              "DocumentMoniker": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app-routing.module.ts",
-              "RelativeDocumentMoniker": "home_demo_app.client\\src\\app\\app-routing.module.ts",
-              "ToolTip": "C:\\Users\\jhans\\Home application\\NestFinder\\home_demo_app.client\\src\\app\\app-routing.module.ts",
-              "RelativeToolTip": "home_demo_app.client\\src\\app\\app-routing.module.ts",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-16T19:04:24.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T04:44:00.033Z"
             },
             {
               "$type": "Document",
@@ -778,8 +757,7 @@
               "RelativeToolTip": "home_demo_app.client\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-17T05:07:16.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T05:07:16.158Z"
             },
             {
               "$type": "Document",

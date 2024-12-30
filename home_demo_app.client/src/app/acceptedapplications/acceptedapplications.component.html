@@ -16,6 +16,7 @@
     <thead class="table-dark">
       <tr>
         <th>Property Type</th>
+        <th>Owner Name</th>
         <th>Contact Options</th>
         <th>Status</th>
         <th>Submitted At</th>
@@ -25,11 +26,12 @@
       <tr *ngFor="let app of applications">
         <!-- Property Type (Clickable Link) -->
         <td>
-          <a href="#" (click)="showPropertyDetails(app)" class="text-primary">
+          <span class="clickable" (click)="showPropertyDetails(app.property)">
             {{ app.propertyType }}
-          </a>
+          </span>
         </td>
 
+        <td>{{ app.ownerName }}</td>
         <!-- Contact Options (Call and WhatsApp) -->
         <td>
           <button (click)="callOwner(app.mobileNumber)" class="btn btn-primary me-2" style="color: black">
@@ -65,6 +67,11 @@
   <h3>Property Details</h3>
   <div class="card">
     <div class="card-body">
+      <div class="property-images">
+        <div class="image-gallery">
+          <img *ngFor="let img of selectedProperty.images" [src]="'http://13.61.164.211/5000/' + img" alt="Property Image" class="property-image">
+        </div>
+      </div>
       <p><strong>Type:</strong> {{ selectedProperty.propertyType }}</p>
       <p><strong>Price:</strong> {{ selectedProperty.price | currency: 'INR' }}</p>
       <p><strong>Location:</strong> {{ selectedProperty.street }}, {{ selectedProperty.city }} - {{ selectedProperty.pincode }}</p>
@@ -76,16 +83,9 @@
       <p><strong>Furnished:</strong> {{ selectedProperty.furnished === 'Yes' ? 'Yes' : 'No' }}</p>
       <p><strong>Contact:</strong> {{ selectedProperty.mobileNumber }}</p>
     </div>
-    <div class="property-images">
-      <h3>Property Images</h3>
-      <div class="image-gallery">
-        <img *ngFor="let img of selectedProperty.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
-      </div>
-    </div>
+    
   </div>
   
   <!-- Close Details Button -->
-  <div class="mt-3 text-end">
-    <button class="btn btn-secondary" (click)="selectedProperty = null">Close Details</button>
-  </div>
+  
 </div>

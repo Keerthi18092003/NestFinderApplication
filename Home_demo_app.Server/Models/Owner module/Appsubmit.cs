@@ -21,5 +21,6 @@ namespace Home_demo_app.Server.Models.Owner_module
 		public string Comments { get; set; } = string.Empty;
 		public DateTime SubmittedAt { get; set; }
 		public string Status { get; set; }
-	}
+        
+    }
 }

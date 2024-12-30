@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Home_demo_app.Server.Models
 {
@@ -11,5 +12,6 @@ namespace Home_demo_app.Server.Models
 		public string Comments { get; set; } = string.Empty;
 		public DateTime SubmittedAt { get; set; }
 		public string Status { get; set; }
-	}
+       
+    }
 }

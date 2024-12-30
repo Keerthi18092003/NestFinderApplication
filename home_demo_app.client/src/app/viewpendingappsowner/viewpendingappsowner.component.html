@@ -13,7 +13,9 @@
         <th>Application ID</th>
         <th>Tenant Type</th>
         <th>Status</th>
+
         <th>Submitted At</th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -26,7 +28,21 @@
         </td>
         <td>{{ app.tenantType }}</td>
         <td>{{ app.status }}</td>
+
         <td>{{ app.submittedAt | date: 'short' }}</td>
+        <td>
+          <button *ngIf="app.status === 'Pending'"
+                  (click)="acceptApplication(app.applicationId)"
+                  class="btn btn-success" style="color:black">
+            Accept
+          </button>
+          <button *ngIf="app.status === 'Pending'"
+                  (click)="rejectApplication(app.applicationId)"
+                  class="btn btn-danger" style="color:black">
+            Reject
+          </button>
+        </td>
+
       </tr>
     </tbody>
   </table>
@@ -41,6 +57,11 @@
 <div *ngIf="selectedApplication" class="application-details">
   <div class="application-info">
     <h5>Property Details:</h5>
+    <div class="property-images">
+      <div class="image-gallery">
+        <img *ngFor="let img of selectedApplication.property.propertyDetails.images" [src]="'http://13.61.164.211/5000/' + img" alt="Property Image" class="property-image">
+      </div>
+    </div>
     <ul>
       <li><strong>Type:</strong> {{ selectedApplication.property.propertyDetails.propertyType }}</li>
       <li><strong>Price:</strong> ₹{{ selectedApplication.property.propertyDetails.price }}</li>
@@ -48,17 +69,9 @@
         <strong>Location:</strong> {{ selectedApplication.property.propertyDetails.street }},
         {{ selectedApplication.property.propertyDetails.city }},
       </li>
-      <li><strong>Bedrooms:</strong> {{ selectedApplication.property.propertyDetails.rooms }}</li>
+      <li><strong>Total Rooms:</strong> {{ selectedApplication.property.propertyDetails.rooms }}</li>
 
     </ul>
-    <div class="property-images">
-      <div class="image-gallery">
-        <img *ngFor="let img of selectedApplication.property.propertyDetails.images" [src]="'http://localhost:5043/' + img" alt="Property Image" class="property-image">
-      </div>
-    </div>
   </div>
-  <div class="action-buttons">
-    <button class="btn btn-success" (click)="acceptApplication(selectedApplication.applicationId)" style="color: black";>Accept</button>
-    <button class="btn btn-danger" (click)="rejectApplication(selectedApplication.applicationId)" style="color: black";>Reject</button>
-  </div>
+  
 </div>

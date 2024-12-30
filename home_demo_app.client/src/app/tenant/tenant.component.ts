@@ -39,7 +39,8 @@ export class TenantComponent {
       // Filter properties by matching street or city
       this.filteredProperties = this.properties.filter(property =>
         property.street.toLowerCase().includes(query) ||
-        property.city.toLowerCase().includes(query)
+        property.city.toLowerCase().includes(query) ||
+        property.propertyType.toLowerCase().includes(query)
       );
     } else {
       // Reset to show all properties when searchQuery is empty

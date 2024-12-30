@@ -58,30 +58,60 @@ namespace Home_demo_app.Server.Controllers
 
 			return Ok(applications);
 		}
-		
 
-		// Accept an application
-		[HttpPost("Applications/{applicationId}/Accept")]
-		public async Task<IActionResult> AcceptApplication(Guid applicationId)
-		{
 
-			var application = await dbc.Appssubmit.FindAsync(applicationId);
+        // Accept an application
+        [HttpPost("Applications/{applicationId}/Accept")]
+        public async Task<IActionResult> AcceptApplication(Guid applicationId)
+        {
+            // Fetch the application details, including property and tenant (from Regs table using Id)
+            var application = await dbc.Appssubmit
+                .Include(a => a.Property)  // Include property details
+                .Where(a => a.ApplicationId == applicationId)  // Filter by ApplicationId
+                .FirstOrDefaultAsync();  // Get the application by ID
 
-			if (application == null)
-			{
-				return NotFound("Application not found.");
-			}
+            if (application == null)
+            {
+                return NotFound("Application not found.");
+            }
 
-			application.Status = "Accepted";
+            // Fetch tenant details from the Regs table based on the Id (foreign key)
+            var tenant = await dbc.Regs
+                .Where(r => r.Id == application.Id)  // Match Regs.Id with Appssubmit.Id
+                .FirstOrDefaultAsync();  // Get the tenant details
 
-			await dbc.SaveChangesAsync();
-			
+            if (tenant == null)
+            {
+                return NotFound("Tenant not found.");
+            }
 
-			return Ok(new { message = "Application accepted successfully." });
-		}
+            // Update the application status
+            application.Status = "Accepted";
 
-		// Reject an application
-		[HttpPost("Applications/{applicationId}/Reject")]
+            // Save changes to the database
+            await dbc.SaveChangesAsync();
+
+            // Fetch tenant and property details
+            var tenantName = tenant.Name;
+            var tenantEmail = tenant.Email;
+            var propertyType = application.Property.PropertyType;
+
+            
+
+            // Return response with tenant and property details for frontend to send email
+            return Ok(new
+            {
+                message = "Application accepted successfully.",
+                tenantName = tenantName,
+                tenantEmail = tenantEmail,
+                propertyType = propertyType,
+               
+            });
+        }
+
+
+        // Reject an application
+        [HttpPost("Applications/{applicationId}/Reject")]
 		public async Task<IActionResult> RejectApplication(Guid applicationId)
 		{
 			var application = await dbc.Appssubmit.FindAsync(applicationId);
@@ -191,7 +221,23 @@ namespace Home_demo_app.Server.Controllers
 					  (app, owner) => new
 					  {
 						  ApplicationId = app.ApplicationId,
-						  PropertyType = app.Property.PropertyType,
+                          Property = new
+                          {
+                              app.Property.PropertyType,
+                              app.Property.Price,
+                              app.Property.Street,
+                              app.Property.City,
+                              app.Property.Pincode,
+                              app.Property.Images,
+                              app.Property.Description,
+                              app.Property.RentalTerms,
+                              app.Property.Furnished,
+                              app.Property.Bedrooms,
+                              app.Property.Rooms,
+                              app.Property.Area,
+                              app.Property.MobileNumber
+                          },
+                          PropertyType = app.Property.PropertyType,
 						  MobileNumber = app.Property.MobileNumber,
 						  Status = app.Status,
 						  SubmittedAt=app.SubmittedAt,

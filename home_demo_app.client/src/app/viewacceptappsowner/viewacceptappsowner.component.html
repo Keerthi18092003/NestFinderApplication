@@ -23,7 +23,7 @@
       <tr *ngFor="let app of acceptedApplications">
         <td>
           <!-- Clicking on property type shows property details -->
-          <span class="clickable" (click)="showPropertyDetails(app.property)">
+          <span class="clickable" (click)="showPropertyDetails(app.property.propertyDetails)">
             {{ app.propertyType }}
           </span>
         </td>
@@ -40,5 +40,31 @@
     <p>No accepted applications found.</p>
   </div>
 </ng-template>
+<div *ngIf="selectedProperty" class="container mt-4">
+  <h3>Property Details</h3>
+  <div class="card">
+    <div class="card-body">
+      <div class="property-images">
+        <div class="image-gallery">
+          <img *ngFor="let img of selectedProperty.images" [src]="'http://13.61.164.211/5000/' + img" alt="Property Image" class="property-image">
+        </div>
+      </div>
+      
+      <p><strong>Price:</strong> {{ selectedProperty.price | currency: 'INR' }}</p>
+      <p><strong>Location:</strong> {{ selectedProperty.street }}, {{ selectedProperty.city }} - {{ selectedProperty.pincode }}</p>
+      <p><strong>Description:</strong> {{ selectedProperty.description }}</p>
+      <p><strong>Rental Terms:</strong> {{ selectedProperty.rentalTerms || 'Not specified' }}</p>
+      <p><strong>Bedrooms:</strong> {{ selectedProperty.bedrooms }}</p>
+      <p><strong>Rooms:</strong> {{ selectedProperty.rooms }}</p>
+      <p><strong>Area (sq.ft.):</strong> {{ selectedProperty.area }}</p>
+      <p><strong>Furnished:</strong> {{ selectedProperty.furnished === 'Yes' ? 'Yes' : 'No' }}</p>
+      <p><strong>Contact:</strong> {{ selectedProperty.mobileNumber }}</p>
+    </div>
+
+  </div>
+
+  <!-- Close Details Button -->
+
+</div>
 
 

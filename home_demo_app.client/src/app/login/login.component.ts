@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule,FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute,Router, RouterModule } from '@angular/router';
 import { LoginResponse, LoginSessionService } from '../../services/loginsession.service';
 
 
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit{
 
   private adminEmail = 'nestfinder@gmail.com';
   private adminPassword = 'vkk@123456';
-   constructor(private fb: FormBuilder, private router: Router, private http: HttpClient,private loginService:LoginSessionService) {
+  constructor(private fb: FormBuilder, private router: Router, private http: HttpClient, private loginService: LoginSessionService, private route: ActivatedRoute) {
      this.loginForm = this.fb.group({
        email: ['', [Validators.required, Validators.email]],
        password: ['', [Validators.required, Validators.minLength(8)]]
@@ -63,7 +63,16 @@ export class LoginComponent implements OnInit{
                console.error('userId is missing or undefined in the response.');
              }
              alert('Login successful!');
-             this.router.navigate(['/tenant']);
+             const queryParams = this.route.snapshot.queryParams;
+             const redirectTo = queryParams['redirectTo'] || '/tenant'; // Default to tenant
+             const filter = queryParams['filter'] || null;
+
+             // Redirect to the desired page with optional filter
+             if (filter) {
+               this.router.navigate([redirectTo], { queryParams: { filter: filter } });
+             } else {
+               this.router.navigate([redirectTo]);
+             }
            },
          error: (err) => {
            if (err.status === 401) {

@@ -86,7 +86,7 @@ export class GetusersComponent implements OnInit {
     };
 
     
-    this.http.post('https://localhost:7261/api/Email/send', emailPayload)
+    this.http.post('/api/Email/send', emailPayload)
       .subscribe({
         next: (response: any) => {
           this.message = `Warning email sent to ${user.email} successfully!`;

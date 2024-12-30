@@ -284,11 +284,10 @@
                   Explore a wide range of houses available for rent, tailored to suit your needs and preferences.
                 </p>
 
-                <a [routerLink]="['/tenant/house']" class="card-link">
+                <a [routerLink]="['/login']" [queryParams]="{ redirectTo: '/tenant/house', filter: 'house' }" class="card-link">
                   <span>Find A Home</span>
-
-
                 </a>
+
 
               </div>
             </li>
@@ -308,11 +307,10 @@
                   Find the perfect apartment for rent with options that fit your lifestyle, from studio apartments to luxurious ones.
                 </p>
 
-                <a [routerLink]="['/tenant/apartment']" class="card-link">
+                <a [routerLink]="['/login']" [queryParams]="{ redirectTo: '/tenant/apartment', filter: 'apartment' }" class="card-link">
                   <span>Find A Home</span>
-
-
                 </a>
+
 
               </div>
             </li>
@@ -332,11 +330,10 @@
                   Explore affordable PG (Paying Guest) accommodations perfect for students and professionals.
                 </p>
 
-                <a [routerLink]="['/tenant/pg']" class="card-link">
+                <a [routerLink]="['/login']" [queryParams]="{ redirectTo: '/tenant/pg', filter: 'pg' }" class="card-link">
                   <span>Find A Home</span>
-
-
                 </a>
+
 
               </div>
             </li>
@@ -371,7 +368,7 @@
 
                 <div *ngIf="property.images?.length > 0">
                   <a href="#">
-                    <img [src]="'http://localhost:5043/' + property.images[0]" alt="Property Image" class="w-100">
+                    <img [src]="'http://13.61.164.211/5000/' + property.images[0]" alt="Property Image" class="w-100">
                   </a>
                 </div>
                 <div class="banner-actions">
@@ -392,10 +389,12 @@
                 </div>
 
                 <h3 class="h3 card-title">
-                  <a [routerLink]="['/applicationsubmit', property.propertyId]">
+                  <a [routerLink]="['/login']"
+                     [queryParams]="{ redirectTo: '/applicationsubmit/' + property.propertyId }">
                     {{ property.propertyType }}
                   </a>
                 </h3>
+
                 <p class="card-text">
                   {{
  property.description | slice: 0:100

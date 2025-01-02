@@ -31,7 +31,7 @@ export class RegisterComponent {
   http = inject(HttpClient);
   router = inject(Router);
 
-  
+  termsModalOpen = false;
   
   registersForm = new FormGroup({
     name: new FormControl('', {
@@ -80,8 +80,10 @@ export class RegisterComponent {
         this.confirmPasswordValidator // Confirm password must match password
       ],
       nonNullable: true
-    })
+    }),
+    acceptTerms: new FormControl(false, Validators.requiredTrue)
   });
+
   ageValidator(control: AbstractControl): ValidationErrors | null {
     const dob = new Date(control.value);
     const today = new Date();
@@ -124,7 +126,7 @@ export class RegisterComponent {
 
     return null;
   }
-
+  
 
   onFormSubmit() {
     if (this.registersForm.valid) {
@@ -132,7 +134,7 @@ export class RegisterComponent {
 
       this.http.post('https://localhost:7261/api/Registration', userDetails).subscribe({
         next: () => {
-          alert('Registration successful!');
+          alert('🎉 Registration successful! Welcome to NestFinder!');
           this.router.navigate(['/login']);
         },
         error: (err) => {
@@ -144,4 +146,12 @@ export class RegisterComponent {
       alert('Please fix the errors in the form before submitting.');
     }
   }
+  openTermsModal(): void {
+    this.termsModalOpen = true;
+  }
+
+  closeTermsModal(): void {
+    this.termsModalOpen = false;
+  }
+
 }

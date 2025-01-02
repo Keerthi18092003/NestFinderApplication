@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AppsubmissionService } from '../../services/appsubmission.service';
 import { LoginSessionService } from '../../services/loginsession.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-viewpendingappsowner',
@@ -16,10 +17,41 @@ export class ViewpendingappsownerComponent {
   selectedApplication: any = null;
   loading: boolean = true;
   errorMessage: string = '';
-  constructor(private appsubmissionService: AppsubmissionService, private loginService: LoginSessionService, private http: HttpClient) { }
+  applications: any[] = [];
+  isLoading: boolean = true;
+  users: any[] = [];  
+  
+  constructor(private appsubmissionService: AppsubmissionService, private loginService: LoginSessionService, private http: HttpClient, private applicationService: AppsubmissionService, private userService: UserService) { }
 
   ngOnInit(): void {
     this.loadPendingApplications();
+    this.loadUsers();
+    this.loadApplications();
+  }
+  loadUsers(): void {
+    // Fetch all users
+    this.userService.getUsers().subscribe({
+      next: (data) => {
+        this.users = data;
+        this.isLoading = false;
+      },
+      error: (err) => {
+        console.error('Error fetching users:', err);
+        this.isLoading = false;
+      }
+    });
+  }
+  loadApplications(): void {
+    this.applicationService.getAdminApplications().subscribe(
+      (data) => {
+        this.applications = data;
+        this.isLoading = false;
+      },
+      (error) => {
+        this.errorMessage = 'Failed to load applications.';
+        this.isLoading = false;
+      }
+    );
   }
 
   loadPendingApplications(): void {
@@ -45,53 +77,74 @@ export class ViewpendingappsownerComponent {
   showApplicationDetails(application: any): void {
     this.selectedApplication = application;
   }
+   
   acceptApplication(applicationId: string): void {
+    // Find the application by applicationId
+    console.log(applicationId);
+    console.log('Applications Array:', this.applications);
+    const application = this.applications.find(app => app.applicationId === applicationId);
+    console.log(application);
+    if (!application) {
+      alert('Application not found!');
+      return;
+    }
+
+    const userId = application.id;
+    const user = this.users.find(u => u.id === userId);
+    if (!user) {
+      alert('User not found!');
+      return;
+    }
+
+    // Send the request to accept the application in the backend
     this.appsubmissionService.acceptApplication(applicationId).subscribe({
       next: (response: any) => {
         alert('Application accepted!');
+        this.loadPendingApplications(); 
 
-        // Extract details from the backend response
-        const tenantName = response.tenantName;
-        const tenantEmail = response.tenantEmail;
-        const propertyType = response.propertyType;
-
-        // Prepare email content
+        // Prepare the email payload
         const emailPayload = {
-          to: tenantEmail,
-          subject: 'Your Application Has Been Accepted',
+          to: user.email,
+          subject: '🎉 Your Application Has Been Accepted! 🎉',
           body: `
-          Dear ${tenantName},
+  Hi ${user.name},
 
-          Congratulations! Your application for the property '${propertyType}' has been accepted by the owner.
+  Great news! 🎉 We’re thrilled to let you know that your application for the property has been successfully accepted.
 
-          Please log in to NestFinder to view your application status:
-          
+  You’re now one step closer to moving into your dream home! 🏡 
 
-          Thank you,
-          NestFinder Team
-        `
+  To review your application details and next steps, please log in to your NestFinder account:
+  [NestFinder Login](http://13.61.164.211/login)
+
+  If you have any questions, feel free to reach out to our support team. We're here to help!
+
+  Thank you for choosing NestFinder. We’re excited to be part of your journey! 💛
+
+  Warm regards,  
+  The NestFinder Team  
+  `
         };
 
-        // Send the email
+        // Send email
         this.http.post('https://localhost:7261/api/Email/send', emailPayload).subscribe({
           next: () => {
-            alert('Email sent to tenant successfully.');
+            alert('Application accepted and email sent successfully!');
+            
           },
-          error: (err:any) => {
+          error: (err) => {
             console.error('Failed to send email:', err);
             alert('Failed to send email. Please try again later.');
           }
         });
-
-        // Reload pending applications
-        this.loadPendingApplications();
       },
       error: (err) => {
-        alert('Failed to accept application: ' + err.error);
+        console.error('Failed to accept application:', err);
+        alert('Failed to accept application. Please try again later.');
       }
     });
   }
 
+      
 
   rejectApplication(applicationId: string): void {
     this.appsubmissionService.rejectApplication(applicationId).subscribe(

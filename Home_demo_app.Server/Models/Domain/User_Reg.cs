@@ -15,6 +15,5 @@ namespace Home_demo_app.Server.Models.Domain
 		public string ? ConfirmPassword { get; set; }
 
 		public bool? IsSuspended { get; set; } = false;
-
 	}
 }

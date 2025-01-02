@@ -103,13 +103,79 @@
                   </div>
                 </div>
               </div>
+              <div>
+                <input type="checkbox"
+                       id="acceptTerms"
+                       formControlName="acceptTerms" />
+                <label for="acceptTerms">
+                  I agree to the <a href="javascript:void(0);" (click)="openTermsModal()">Terms & Conditions</a>
+                </label>
+                <div *ngIf="registersForm.controls['acceptTerms'].touched && !registersForm.controls['acceptTerms'].value">
+                  <small class="error">You must accept the Terms & Conditions to proceed.</small>
+                </div>
+              </div>
+              <div *ngIf="termsModalOpen" class="terms-modal">
+                <div class="modal-content">
+                  <button class="close-btn" (click)="closeTermsModal()">×</button>
+                  <h2>Terms & Conditions</h2>
+                  <div class="terms-content">
+                    <p>
+                      Welcome to <strong>NestFinder</strong>. By using this platform, you agree to the following Terms and Conditions. Please read them carefully before proceeding.
+                    </p>
+
+                    <h5>General Use</h5>
+                    <p>
+                      1.  NestFinder provides a platform for tenants and property owners to connect. You must use this platform responsibly and in accordance with applicable laws.
+                    </p>
+
+                    <h5>User Responsibilities</h5>
+                    <ul>
+                      <li>2. You are responsible for the accuracy of the information you provide.</li>
+                      <li>3. You must not engage in fraudulent or misleading activities.</li>
+                      <li>4. You agree to keep your account credentials secure and confidential.</li>
+                    </ul>
+
+                    <h5>Property Listings</h5>
+                    <p>
+                      5.  Property owners must ensure that the details of their listings are accurate and up-to-date. Misrepresentation of properties is strictly prohibited.
+                    </p>
+
+                    <h5>Privacy Policy</h5>
+                    <p>
+                      6. Your personal information will be handled in accordance with our Privacy Policy. NestFinder takes data security seriously.
+                    </p>
+
+                    <h5>Liability</h5>
+                    <p>
+                      7. NestFinder is not responsible for any disputes or issues arising between tenants and property owners. The platform acts solely as a medium for connection.
+                    </p>
+
+                    <h5>Termination of Use</h5>
+                    <p>
+                      8. We reserve the right to terminate access to the platform if the Terms & Conditions are violated.
+                    </p>
+
+                    <h5>Changes to Terms</h5>
+                    <p>
+                      9. NestFinder may update these Terms & Conditions from time to time. Users will be notified of any significant changes.
+                    </p>
+
+                    <p>
+                      10. If you have any questions or concerns regarding these Terms & Conditions, feel free to contact us
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
               <div class="text-center mb-3 pb-1">
-                <button class="btn btn-lg" type="submit" style="background-color: black; color: #6D712E;">
+                <button class="btn btn-lg" type="submit" [disabled]="!registersForm.controls['acceptTerms'].value" style="background-color: black; color: #6D712E">
                   Register
                 </button>
               </div>
               <p class="mb-5 pb-lg-2">
-                Already have an account? <a routerLink="/login" style="color:black;">Sign in here</a>
+                Already have an account? <a routerLink="/login" style="color:black">Sign in here</a>
               </p>
             </form>
           </div>

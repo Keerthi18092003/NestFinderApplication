@@ -15,15 +15,15 @@
 
           <li>
             <a href="mailto:nestfinderinfo@gmail.com" class="header-top-link">
-              
 
+              <i class="fas fa-envelope"></i>
               <span>nestfinderinfogmail.com</span>
             </a>
           </li>
 
           <li>
             <a href="#" class="header-top-link">
-              
+              <i class="fas fa-map-marker-alt"></i>
               <address>Kalasalingam University,Madurai</address>
             </a>
           </li>
@@ -465,7 +465,7 @@
                 <span class="step-number">02</span>
               </div>
               <h3 class="step-title">Add Property Details</h3>
-              <p class="step-description">Fill in details like property type, location, rent, and more.</p>
+              <p class="step-description">Click on RentOut and Fill in details like property type, location, rent, and more.</p>
             </div>
             <div class="arrow">
               <svg width="100" height="50">
@@ -499,7 +499,7 @@
               <p class="card-text">We can help you realize your dream of a new home</p>
             </div>
 
-            <button class="btn cta-btn" [routerLink]="['/tenant']">
+            <button class="btn cta-btn" [routerLink]="['/login']">
               <span>Explore Properties</span>
             </button>
           </div>
@@ -596,20 +596,40 @@
               </li>
 
               <li>
-                <a href="#" class="footer-link">About</a>
+                <a [routerLink]="['/about']" (click)="navigateToSection('about')" fragment="about" class="footer-link">About</a>
               </li>
 
 
               <li>
-                <a href="#" class="footer-link">Locations Map</a>
+                <a href="https://www.google.com/maps?q=Kalasalingam+University"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="footer-link">
+                  Location Map
+                </a>
               </li>
 
+
               <li>
-                <a href="#" class="footer-link">FAQ</a>
+                <a href="javascript:void(0);" (click)="openFaqModal()" class="footer-link">FAQ</a>
               </li>
 
 
             </ul>
+
+            <div *ngIf="faqModalOpen" class="faq-modal">
+              <div class="modal-content">
+                <button class="close-btn" (click)="closeFaqModal()">×</button>
+                <h2>Frequently Asked Questions</h2>
+                <div *ngFor="let faq of faqs" class="faq-item">
+                  <h3 (click)="toggleFaq(faq.id)" [style.cursor]="'pointer'" class="faq-question">
+                    {{ faq.question }}
+                  
+                  </h3>
+                  <p *ngIf="faq.open" class="faq-answer">{{ faq.answer }}</p>
+                </div>
+              </div>
+            </div>
 
             <ul class="footer-list">
 
@@ -617,23 +637,76 @@
                 <p class="footer-list-title">Services</p>
               </li>
 
-              
 
-              
+
+
 
               <li>
-                <a href="#" class="footer-link">Login</a>
+                <a routerLink="/login" class="footer-link">Login</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">My account</a>
+                <a routerLink="/register" class="footer-link">Register</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="javascript:void(0);" class="footer-link" (click)="openTermsModal()">Terms & Conditions</a>
               </li>
 
-              
+              <div *ngIf="termsModalOpen" class="terms-modal">
+                <div class="modal-content">
+                  <button class="close-btn" (click)="closeTermsModal()">×</button>
+                  <h2>Terms & Conditions</h2>
+                  <div class="terms-content">
+                    <p>
+                      Welcome to <strong>NestFinder</strong>. By using this platform, you agree to the following Terms and Conditions. Please read them carefully before proceeding.
+                    </p>
+
+                    <h5>General Use</h5>
+                    <p>
+                      1.  NestFinder provides a platform for tenants and property owners to connect. You must use this platform responsibly and in accordance with applicable laws.
+                    </p>
+
+                    <h5>User Responsibilities</h5>
+                    <ul>
+                      <li>2. You are responsible for the accuracy of the information you provide.</li>
+                      <li>3. You must not engage in fraudulent or misleading activities.</li>
+                      <li>4. You agree to keep your account credentials secure and confidential.</li>
+                    </ul>
+
+                    <h5>Property Listings</h5>
+                    <p>
+                      5.  Property owners must ensure that the details of their listings are accurate and up-to-date. Misrepresentation of properties is strictly prohibited.
+                    </p>
+
+                    <h5>Privacy Policy</h5>
+                    <p>
+                      6. Your personal information will be handled in accordance with our <a href="#" class="link">Privacy Policy</a>. NestFinder takes data security seriously.
+                    </p>
+
+                    <h5>Liability</h5>
+                    <p>
+                      7. NestFinder is not responsible for any disputes or issues arising between tenants and property owners. The platform acts solely as a medium for connection.
+                    </p>
+
+                    <h5>Termination of Use</h5>
+                    <p>
+                      8. We reserve the right to terminate access to the platform if the Terms & Conditions are violated.
+                    </p>
+
+                    <h5>Changes to Terms</h5>
+                    <p>
+                      9. NestFinder may update these Terms & Conditions from time to time. Users will be notified of any significant changes.
+                    </p>
+
+                    <p>
+                      10. If you have any questions or concerns regarding these Terms & Conditions, feel free to contact us
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
 
             </ul>
 
@@ -643,24 +716,13 @@
                 <p class="footer-list-title">Customer Care</p>
               </li>
 
+
               <li>
-                <a href="#" class="footer-link">Login</a>
+                <a href="javascript:void(0);" (click)="openFaqModal()" class="footer-link">FAQ</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">My account</a>
-              </li>
-
-             
-
-              
-
-              <li>
-                <a href="#" class="footer-link">FAQ</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Contact us</a>
+                <a (click)="sendEmail()" class="footer-link">Contact us</a>
               </li>
 
             </ul>
@@ -674,7 +736,7 @@
         <div class="container">
 
           <p class="copyright">
-            &copy; 2022 <a href="#">Team NovaNinjas</a>. All Rights Reserved
+            &copy; 2024 <a href="#">Team NovaNinjas</a>. All Rights Reserved
           </p>
 
         </div>

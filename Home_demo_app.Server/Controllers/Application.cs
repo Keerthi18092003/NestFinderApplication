@@ -64,51 +64,21 @@ namespace Home_demo_app.Server.Controllers
         [HttpPost("Applications/{applicationId}/Accept")]
         public async Task<IActionResult> AcceptApplication(Guid applicationId)
         {
-            // Fetch the application details, including property and tenant (from Regs table using Id)
-            var application = await dbc.Appssubmit
-                .Include(a => a.Property)  // Include property details
-                .Where(a => a.ApplicationId == applicationId)  // Filter by ApplicationId
-                .FirstOrDefaultAsync();  // Get the application by ID
+
+            var application = await dbc.Appssubmit.FindAsync(applicationId);
 
             if (application == null)
             {
                 return NotFound("Application not found.");
             }
 
-            // Fetch tenant details from the Regs table based on the Id (foreign key)
-            var tenant = await dbc.Regs
-                .Where(r => r.Id == application.Id)  // Match Regs.Id with Appssubmit.Id
-                .FirstOrDefaultAsync();  // Get the tenant details
-
-            if (tenant == null)
-            {
-                return NotFound("Tenant not found.");
-            }
-
-            // Update the application status
             application.Status = "Accepted";
 
-            // Save changes to the database
             await dbc.SaveChangesAsync();
 
-            // Fetch tenant and property details
-            var tenantName = tenant.Name;
-            var tenantEmail = tenant.Email;
-            var propertyType = application.Property.PropertyType;
 
-            
-
-            // Return response with tenant and property details for frontend to send email
-            return Ok(new
-            {
-                message = "Application accepted successfully.",
-                tenantName = tenantName,
-                tenantEmail = tenantEmail,
-                propertyType = propertyType,
-               
-            });
+            return Ok(new { message = "Application accepted successfully." });
         }
-
 
         // Reject an application
         [HttpPost("Applications/{applicationId}/Reject")]

@@ -55,14 +55,14 @@ export class LoginComponent implements OnInit{
          .post<any>('https://localhost:7261/api/Login', loginData)
          .subscribe({
            next: (response: any) => {
-             console.log('Response:',response);
+             console.log('Response of login:',response);
              if (response.userId) {
                this.loginService.setUserId(response.userId); // Set userId
                console.log('User ID set in sessionStorage:', response.userId);
              } else {
                console.error('userId is missing or undefined in the response.');
              }
-             alert('Login successful!');
+             alert(`🎉 Welcome to NestFinder! We are happy to have you dear !`);
              const queryParams = this.route.snapshot.queryParams;
              const redirectTo = queryParams['redirectTo'] || '/tenant'; // Default to tenant
              const filter = queryParams['filter'] || null;

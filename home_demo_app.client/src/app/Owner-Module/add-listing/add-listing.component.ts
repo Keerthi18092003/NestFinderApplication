@@ -180,7 +180,7 @@ export class AddListingComponent {
           this.images.clear();
           if (data.images && Array.isArray(data.images)) {
             data.images.forEach((image: string) => {
-              const fullImageUrl = `http://localhost:5043/${image}`;
+              const fullImageUrl = `http://13.61.64.165:5000/${image}`;
               this.images.push(this.fb.control(fullImageUrl));
               this.selectedImages.push(fullImageUrl); 
             });

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private apiUrl = 'https://localhost:7261/api/Registration'; // Replace with your actual API URL
+  private apiUrl = 'http://13.61.64.165:5000/api/Registration'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) { }
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AppsubmissionService {
-  private apiUrl = 'https://localhost:7261/api/Application';
+  private apiUrl = 'http://13.61.64.165:5000/api/Application';
 
   constructor(private http: HttpClient) { }
 

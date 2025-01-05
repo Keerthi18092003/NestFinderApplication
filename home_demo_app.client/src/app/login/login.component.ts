@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit{
      }
      else {
        this.http
-         .post<any>('https://localhost:7261/api/Login', loginData)
+         .post<any>('http://13.61.64.165:5000/api/Login', loginData)
          .subscribe({
            next: (response: any) => {
              console.log('Response of login:',response);

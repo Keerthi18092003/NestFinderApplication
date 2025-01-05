@@ -114,7 +114,7 @@ export class ViewpendingappsownerComponent {
   You’re now one step closer to moving into your dream home! 🏡 
 
   To review your application details and next steps, please log in to your NestFinder account:
-  [NestFinder Login](http://13.61.164.211/login)
+  [NestFinder Login](http://13.61.64.165/login)
 
   If you have any questions, feel free to reach out to our support team. We're here to help!
 
@@ -126,7 +126,7 @@ export class ViewpendingappsownerComponent {
         };
 
         // Send email
-        this.http.post('https://localhost:7261/api/Email/send', emailPayload).subscribe({
+        this.http.post('http://13.61.64.165:5000/api/Email/send', emailPayload).subscribe({
           next: () => {
             alert('Application accepted and email sent successfully!');
             

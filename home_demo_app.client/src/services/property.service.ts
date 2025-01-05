@@ -6,7 +6,7 @@ import { catchError, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PropertyService {
-  private apiUrl = 'https://localhost:7261/api/AddProperty'; 
+  private apiUrl = 'http://13.61.64.165:5000/api/AddProperty'; 
   constructor(private http: HttpClient) { }
 
   

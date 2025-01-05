@@ -100,7 +100,7 @@ The NestFinder Team
 
 
     
-    this.http.post('/api/Email/send', emailPayload)
+    this.http.post('http://13.61.64.165:5000/api/Email/send', emailPayload)
       .subscribe({
         next: (response: any) => {
           this.message = `Warning email sent to ${user.email} successfully!`;

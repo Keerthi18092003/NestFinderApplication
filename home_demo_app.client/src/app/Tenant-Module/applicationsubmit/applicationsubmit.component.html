@@ -3,7 +3,7 @@
   <div *ngIf="property.images?.length > 0">
     <div class="property-images">
       <div *ngFor="let image of property.images" class="property-image">
-        <img [src]="'http://13.61.64.165:5000/'+image" alt="{{image}}" class="zoomable-image" (click)="openImage('http://localhost:5043/'+image)" />
+        <img [src]="'http://13.61.64.165:5000/'+image" alt="{{image}}" class="zoomable-image" (click)="openImage('http://13.61.64.165:5000/'+image)" />
       </div>
     </div>
   </div>

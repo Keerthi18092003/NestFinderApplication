@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Home_demo_app.Server.Models.Owner_module;
 
 namespace Home_demo_app.Server.Models
 {
@@ -60,6 +61,7 @@ namespace Home_demo_app.Server.Models
 		[Required(ErrorMessage = "At least one image is required")]
 		public required List<string> Images { get; set; } // List of base64 image strings
 
-	}
+       
+    }
 
 }

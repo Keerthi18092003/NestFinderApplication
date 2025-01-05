@@ -13,6 +13,7 @@ import { PropertyService } from '../../services/property.service';
 export class HomeComponent {
   properties: any[] = [];
   errorMessage: string = '';
+  isTeamModalOpen = false;
   constructor(private router: Router, private propertyService: PropertyService) { }
   ngOnInit(): void {
     this.loadProperties();
@@ -139,5 +140,39 @@ export class HomeComponent {
     this.termsModalOpen = false;
   }
 
+  member1 = {
+    name: 'Venkata Keerthi',
+    role: 'Backend Developer (.NET)',
+    introduction: 'I am  an aspiring .NET backend developer with a strong passion for crafting reliable and efficient server-side applications.',
+    linkedin: 'https://www.linkedin.com/in/venkata-keerthi-kovi-22b20b286',
+    github: 'https://github.com/Keerthi18092003',
+    picture: '/images/keerthiimg.jpeg' 
+  };
 
+  member2 = {
+    name: 'Sneha',
+    role: 'Frontend Developer (Angular)',
+    introduction: 'I am a passionate frontend developer, specializing in Angular, with a keen eye for design and user experience.',
+    linkedin: 'https://www.linkedin.com/in/sneha-dondleti13',
+    github: 'https://github.com/snehadondleti',
+    picture: '/images/snehaimg.jpeg'
+  };
+
+  member3 = {
+    name: 'Laxmi Prasanna',
+    role: 'UI/UX Designer & Integration',
+    introduction: 'I am a dedicated UI/UX Designer & Integration Specialist who brings creativity and precision to web application development, ensuring seamless integration between application components.',
+    linkedin: 'https://www.linkedin.com/in/laxmi-prasanna-5ab369329',
+    github: 'https://github.com/kalvacherlaxmiprasanna',
+    picture: '/images/pinkyimg.jpeg' 
+  };
+
+  
+  openTeamModal() {
+    this.isTeamModalOpen = true;
+  }
+
+  closeTeamModal() {
+    this.isTeamModalOpen = false;
+  }
 }

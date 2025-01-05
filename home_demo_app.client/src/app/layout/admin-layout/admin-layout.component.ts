@@ -6,9 +6,9 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { GetusersComponent } from '../../getusers/getusers.component';
-import { SuspendedusersComponent } from '../../suspendedusers/suspendedusers.component';
-import { ViewlistingadminComponent } from '../../viewlistingadmin/viewlistingadmin.component';
+import { GetusersComponent } from '../../Admin-Module/getusers/getusers.component';
+import { SuspendedusersComponent } from '../../Admin-Module/suspendedusers/suspendedusers.component';
+import { ViewlistingadminComponent } from '../../Admin-Module/viewlistingadmin/viewlistingadmin.component';
 
 @Component({
   selector: 'app-admin-layout',

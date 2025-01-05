@@ -29,8 +29,12 @@ namespace Home_demo_app.Server.Controllers
 			{
 				return BadRequest("Passwords do not match.");
 			}
-
-			var user_reg = new User_Reg
+            var existingUser = dbc.Regs.FirstOrDefault(u => u.Email == obj.Email);
+            if (existingUser != null)
+            {
+                return Conflict(new { message = "User already exists with this email." });
+            }
+            var user_reg = new User_Reg
 				{
 					Id=Guid.NewGuid(),
 					Name = obj.Name,
@@ -57,7 +61,22 @@ namespace Home_demo_app.Server.Controllers
 			}
 			return Ok(users);
 		}
-		[HttpPut("suspend/{id}")]
+
+        [HttpGet("view/{id}")]
+        public async Task<IActionResult> GetUserById(Guid id)
+        {
+            
+            var user = await dbc.Regs.FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user == null)
+            {
+                return NotFound(new { Message = "User not found." });
+            }
+
+            return Ok(user);
+        }
+
+        [HttpPut("suspend/{id}")]
 		public async Task<IActionResult> SuspendUser(Guid id)
 		{
 			var user = await dbc.Regs.FindAsync(id); 

@@ -19,8 +19,8 @@ export class LoginComponent implements OnInit{
   loginError: string | null = null;
   loginSuccess: string | null = null;
 
-  private adminEmail = 'nestfinder@gmail.com';
-  private adminPassword = 'vkk@123456';
+  private adminEmail = 'nestfinderinfo@gmail.com';
+  private adminPassword = 'admin@123456';
   constructor(private fb: FormBuilder, private router: Router, private http: HttpClient, private loginService: LoginSessionService, private route: ActivatedRoute) {
      this.loginForm = this.fb.group({
        email: ['', [Validators.required, Validators.email]],

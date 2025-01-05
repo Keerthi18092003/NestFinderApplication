@@ -1,0 +1,71 @@
+.appointments-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+h2, h3 {
+  margin-top: 10px;
+  color: #555;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.appointment-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  .appointment-item h2 {
+    font-size: 18px;
+    color: #444;
+  }
+
+  .appointment-item h3 {
+    font-size: 16px;
+    color: #555;
+  }
+
+.error-message {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.loading-message {
+  color: #007bff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+strong {
+  color: #333;
+}
+
+ng-template {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}

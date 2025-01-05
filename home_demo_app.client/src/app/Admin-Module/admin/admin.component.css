@@ -1,0 +1,41 @@
+
+
+.main-content {
+  margin-left: 0; /* Space for the sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #d4ccc6;
+  min-height: 100vh; /* Ensure it occupies the full height */
+  box-sizing: border-box; 
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px; /* Reduce margin size */
+}
+
+.dashboard-item {
+  background-color: #6D712E;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+  .dashboard-item:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+.dashboard-count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+

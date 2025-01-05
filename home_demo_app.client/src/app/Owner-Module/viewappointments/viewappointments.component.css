@@ -1,0 +1,25 @@
+.appointments-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.loading-message,
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.appointment-item {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+  .appointment-item h2 {
+    margin: 0 0 10px;
+  }
+
+  .appointment-item p {
+    margin: 5px 0;
+  }

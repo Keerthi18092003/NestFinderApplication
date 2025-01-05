@@ -1,0 +1,30 @@
+<app-owner-layout></app-owner-layout>
+
+<div class="appointments-container">
+  <h1>Appointments for Property</h1>
+
+  <!-- Display loading message -->
+  <div *ngIf="loading" class="loading-message">
+    <p>Loading appointments...</p>
+  </div>
+
+  <!-- Display error message -->
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- Display appointments list -->
+  <div *ngIf="!loading && appointments.length > 0; else noAppointments">
+    <div class="appointment-item" *ngFor="let appointment of appointments">
+     
+      <p><strong>Tenant Name:</strong> {{ appointment.tenantName || 'Not available' }}</p>
+      <p><strong>Preferred Date:</strong> {{ appointment.preferredDate | date: 'medium' }}</p>
+      <p><strong>Mobile Number:</strong> {{ appointment.mobileNumber }}</p>
+    </div>
+  </div>
+
+  <!-- No Appointments Template -->
+  <ng-template #noAppointments>
+    <p>No appointments found for this property.</p>
+  </ng-template>
+</div>

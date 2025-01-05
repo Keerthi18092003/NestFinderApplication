@@ -22,7 +22,10 @@
           </li>
 
           <li>
-            <a href="#" class="header-top-link">
+            <a href="https://www.google.com/maps?q=Kalasalingam+University"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="header-top-link">
               <i class="fas fa-map-marker-alt"></i>
               <address>Kalasalingam University,Madurai</address>
             </a>
@@ -624,7 +627,7 @@
                 <div *ngFor="let faq of faqs" class="faq-item">
                   <h3 (click)="toggleFaq(faq.id)" [style.cursor]="'pointer'" class="faq-question">
                     {{ faq.question }}
-                  
+
                   </h3>
                   <p *ngIf="faq.open" class="faq-answer">{{ faq.answer }}</p>
                 </div>
@@ -736,11 +739,66 @@
         <div class="container">
 
           <p class="copyright">
-            &copy; 2024 <a href="#">Team NovaNinjas</a>. All Rights Reserved
+            &copy; 2024 <a href="javascript:void(0);" (click)="openTeamModal()">Team NovaNinjas</a>. All Rights Reserved
           </p>
+          <div *ngIf="isTeamModalOpen" class="team-modal">
+            <div class="modal-content">
+              <button class="close-btn" (click)="closeTeamModal()">×</button>
+              <h2>Meet Our Team</h2>
+
+              <div class="team-member">
+                <div class="team-member-photo-and-info">
+                  <img [src]="member1.picture" alt="{{ member1.name }}" class="team-member-photo">
+                  <div class="team-member-basic-info">
+                    <h3>{{ member1.name }}</h3>
+                    <p>{{ member1.role }}</p>
+                  </div>
+                </div>
+                <div class="team-member-introduction">
+                  <p>{{ member1.introduction }}</p>
+                  <a [href]="member1.linkedin" target="_blank">LinkedIn</a>
+                  <a [href]="member1.github" target="_blank">GitHub</a>
+                </div>
+              </div>
+
+
+              <div class="team-member">
+                <div class="team-member-photo-and-info">
+                  <img [src]="member2.picture" alt="{{ member2.name }}" class="team-member-photo">
+                  <div class="team-member-basic-info">
+                    <h3>{{ member2.name }}</h3>
+                    <p>{{ member2.role }}</p>
+                  </div>
+                </div>
+                <div class="team-member-introduction">
+                  <p>{{ member2.introduction }}</p>
+                  <a [href]="member2.linkedin" target="_blank">LinkedIn</a>
+                  <a [href]="member2.github" target="_blank">GitHub</a>
+                </div>
+              </div>
+
+
+              <div class="team-member">
+                <div class="team-member-photo-and-info">
+                  <img [src]="member3.picture" alt="{{ member3.name }}" class="team-member-photo">
+                  <div class="team-member-basic-info">
+                    <h3>{{ member3.name }}</h3>
+                    <p>{{ member3.role }}</p>
+                  </div>
+                </div>
+                <div class="team-member-introduction">
+                  <p>{{ member3.introduction }}</p>
+                  <a [href]="member3.linkedin" target="_blank">LinkedIn</a>
+                  <a [href]="member3.github" target="_blank">GitHub</a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
 
         </div>
       </div>
-
+      
     </footer>
 </section>

@@ -25,6 +25,7 @@
     <PackageJsonDependenciesPopperjsCore Condition="$(PackageJsonDependenciesPopperjsCore) == ''">^2.11.8</PackageJsonDependenciesPopperjsCore>
     <PackageJsonDependenciesAngularResponsiveCarousel Condition="$(PackageJsonDependenciesAngularResponsiveCarousel) == ''">^2.1.2</PackageJsonDependenciesAngularResponsiveCarousel>
     <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesChartJs Condition="$(PackageJsonDependenciesChartJs) == ''">^4.4.7</PackageJsonDependenciesChartJs>
     <PackageJsonDependenciesJestEditorSupport Condition="$(PackageJsonDependenciesJestEditorSupport) == ''">*</PackageJsonDependenciesJestEditorSupport>
     <PackageJsonDependenciesJwtDecode Condition="$(PackageJsonDependenciesJwtDecode) == ''">^4.0.0</PackageJsonDependenciesJwtDecode>
     <PackageJsonDependenciesNgxPageScroll Condition="$(PackageJsonDependenciesNgxPageScroll) == ''">^13.0.0</PackageJsonDependenciesNgxPageScroll>

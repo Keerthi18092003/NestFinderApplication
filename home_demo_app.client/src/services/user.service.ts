@@ -14,6 +14,9 @@ export class UserService {
   getUsers(): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/view`);  // Sends a GET request to the API to fetch users
   }
+  getUserById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/view/${id}`);
+  }
 
   suspendUser(userId: string): Observable<any> {
     return this.http.put(`${this.apiUrl}/suspend/${userId}`, { isSuspended: true });

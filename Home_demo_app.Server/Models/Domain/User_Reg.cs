@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Home_demo_app.Server.Models.Owner_module;
 
 namespace Home_demo_app.Server.Models.Domain
 {
@@ -15,5 +16,7 @@ namespace Home_demo_app.Server.Models.Domain
 		public string ? ConfirmPassword { get; set; }
 
 		public bool? IsSuspended { get; set; } = false;
-	}
+
+        
+    }
 }

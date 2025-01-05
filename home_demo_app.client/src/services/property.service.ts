@@ -6,18 +6,16 @@ import { catchError, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PropertyService {
-  private apiUrl = 'https://localhost:7261/api/AddProperty'; // Replace with your API endpoint
-
+  private apiUrl = 'https://localhost:7261/api/AddProperty'; 
   constructor(private http: HttpClient) { }
 
-  // Fetch all property listings
+  
   getProperties(): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/view`);
   }
   addProperty(property: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/Add`, property); // Endpoint for adding a new property
+    return this.http.post(`${this.apiUrl}/Add`, property); 
   }
-
   // Update an existing property
   updateProperty(propertyId: string, propDetails: any): Observable<any> {
     console.log(propertyId);
@@ -27,14 +25,14 @@ export class PropertyService {
 
   // Fetch a single property by ID (for editing)
   getPropertyById(propertyId: string): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/edit/${propertyId}`); // Endpoint for fetching a specific property for editing
+    return this.http.get<any>(`${this.apiUrl}/edit/${propertyId}`); 
   }
   deleteProperty(propertyId: string): Observable<void> {
     console.log(propertyId);
     return this.http.delete<void>(`${this.apiUrl}/delete/${propertyId}`).pipe(
       catchError((error) => {
         console.error('Error deleting property:', error);
-        throw error; // Re-throw the error to be handled by the component
+        throw error; 
       })
     );
   }
@@ -44,5 +42,6 @@ export class PropertyService {
   getUserProperties(userId: string): Observable<any> {
     return this.http.get<any[]>(`${this.apiUrl}/view/${userId}`);
   }
+  
 }
 

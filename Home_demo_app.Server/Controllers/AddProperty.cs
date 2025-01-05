@@ -1,5 +1,6 @@
 ﻿using Home_demo_app.Server.Infrastructure;
 using Home_demo_app.Server.Models;
+using Home_demo_app.Server.Models.Owner_module;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -273,7 +274,7 @@ namespace Home_demo_app.Server.Controllers
 			dbc.AddProps.Remove(property);
 			dbc.SaveChanges();
 
-			return Ok(); // Success response
+			return Ok(); 
 		}
 
 		[HttpGet("filter")]
@@ -291,9 +292,9 @@ namespace Home_demo_app.Server.Controllers
 			return Ok(filteredProperties);
 		}
 
+        
 
-
-	}
+    }
 
 
 }

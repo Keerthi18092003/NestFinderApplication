@@ -3,25 +3,27 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "../app/home/home.component";
 import { LoginComponent } from "../app/login/login.component";
 import { RegisterComponent } from './register/register.component';
-import { OwnerComponent } from './owner/owner.component';
-import { AddListingComponent } from './add-listing/add-listing.component';
-import { ViewListingComponent } from './view-listing/view-listing.component';
-import { AdminComponent } from './admin/admin.component';
-import { GetusersComponent } from './getusers/getusers.component';
-import { SuspendedusersComponent } from './suspendedusers/suspendedusers.component';
-import { ViewlistingadminComponent } from './viewlistingadmin/viewlistingadmin.component';
-import { TenantComponent } from './tenant/tenant.component';
-import { ApplicationsubmitComponent } from './applicationsubmit/applicationsubmit.component';
-import { ViewappsubmissionComponent } from './viewappsubmission/viewappsubmission.component';
+import { OwnerComponent } from './Owner-Module/owner/owner.component';
+import { AddListingComponent } from './Owner-Module/add-listing/add-listing.component';
+import { ViewListingComponent } from './Owner-Module/view-listing/view-listing.component';
+import { AdminComponent } from './Admin-Module/admin/admin.component';
+import { GetusersComponent } from './Admin-Module/getusers/getusers.component';
+import { SuspendedusersComponent } from './Admin-Module/suspendedusers/suspendedusers.component';
+import { ViewlistingadminComponent } from './Admin-Module/viewlistingadmin/viewlistingadmin.component';
+import { TenantComponent } from './Tenant-Module/tenant/tenant.component';
+import { ApplicationsubmitComponent } from './Tenant-Module/applicationsubmit/applicationsubmit.component';
+import { ViewappsubmissionComponent } from './Owner-Module/viewappsubmission/viewappsubmission.component';
 import { OwnerLayoutComponent } from './layout/owner-layout/owner-layout.component';
 import { TenantLayoutComponent } from './layout/tenant-layout/tenant-layout.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
-import { ApplicationstatusComponent } from './applicationstatus/applicationstatus.component';
-import { AcceptedapplicationsComponent } from './acceptedapplications/acceptedapplications.component';
-import { ViewpendingappsownerComponent } from './viewpendingappsowner/viewpendingappsowner.component';
-import { ViewappsadminComponent } from './viewappsadmin/viewappsadmin.component';
-import { ViewacceptappsownerComponent } from './viewacceptappsowner/viewacceptappsowner.component';
-import { LocatesuggestComponent } from './locatesuggest/locatesuggest.component';
+import { ApplicationstatusComponent } from './Tenant-Module/applicationstatus/applicationstatus.component';
+import { AcceptedapplicationsComponent } from './Tenant-Module/acceptedapplications/acceptedapplications.component';
+import { ViewpendingappsownerComponent } from './Owner-Module/viewpendingappsowner/viewpendingappsowner.component';
+import { ViewappsadminComponent } from './Admin-Module/viewappsadmin/viewappsadmin.component';
+import { ViewacceptappsownerComponent } from './Owner-Module/viewacceptappsowner/viewacceptappsowner.component';
+import { LocatesuggestComponent } from './Tenant-Module/locatesuggest/locatesuggest.component';
+import { ViewappointmentsComponent } from './Owner-Module/viewappointments/viewappointments.component';
+import { ViewappointmentstenantComponent } from './Tenant-Module/viewappointmentstenant/viewappointmentstenant.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -49,8 +51,10 @@ const routes: Routes = [
   { path: 'viewpendingappsowner', component: ViewpendingappsownerComponent },
   { path: 'viewappsadmin', component: ViewappsadminComponent },
   { path: 'viewacceptappsowner', component: ViewacceptappsownerComponent },
-  {path:'locatesuggest',component:LocatesuggestComponent}
-];
+  { path: 'locatesuggest', component: LocatesuggestComponent },
+  { path: 'viewappointments', component: ViewappointmentsComponent },
+  { path: 'viewappointmentstenant', component: ViewappointmentstenantComponent },
+ ]
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',

@@ -138,8 +138,12 @@ export class RegisterComponent {
           this.router.navigate(['/login']);
         },
         error: (err) => {
-          console.error(err);
-          alert(`Registration failed: ${err.message}`);
+          if (err.status === 409) {
+            alert('An account with this email already exists. Please use a different email.');
+          } else {
+            console.error(err);
+            alert(`Registration failed: ${err.message}`);
+          }
         }
       });
     } else {

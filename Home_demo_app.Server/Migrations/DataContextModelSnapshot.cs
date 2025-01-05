@@ -122,6 +122,36 @@ namespace Home_demo_app.Server.Migrations
                     b.ToTable("Regs");
                 });
 
+            modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appointment", b =>
+                {
+                    b.Property<Guid>("AppointmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("MobileNumber")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<DateTime>("PreferredDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("PropertyId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("AppointmentId");
+
+                    b.HasIndex("PropertyId");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appsubmit", b =>
                 {
                     b.Property<Guid>("ApplicationId")
@@ -154,6 +184,17 @@ namespace Home_demo_app.Server.Migrations
                     b.HasIndex("PropertyId");
 
                     b.ToTable("Appssubmit");
+                });
+
+            modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appointment", b =>
+                {
+                    b.HasOne("Home_demo_app.Server.Models.Addprop", "Property")
+                        .WithMany()
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Property");
                 });
 
             modelBuilder.Entity("Home_demo_app.Server.Models.Owner_module.Appsubmit", b =>

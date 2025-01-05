@@ -26,6 +26,7 @@
     "@popperjs/core": "^2.11.8",
     "angular-responsive-carousel": "^2.1.2",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.7",
     "jest-editor-support": "*",
     "jwt-decode": "^4.0.0",
     "ngx-page-scroll": "^13.0.0",

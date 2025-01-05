@@ -132,7 +132,7 @@ export class RegisterComponent {
     if (this.registersForm.valid) {
       const userDetails = this.registersForm.value;
 
-      this.http.post('https://localhost:7261/api/Registration', userDetails).subscribe({
+      this.http.post('http://13.61.64.165:5000/api/Registration', userDetails).subscribe({
         next: () => {
           alert('🎉 Registration successful! Welcome to NestFinder!');
           this.router.navigate(['/login']);

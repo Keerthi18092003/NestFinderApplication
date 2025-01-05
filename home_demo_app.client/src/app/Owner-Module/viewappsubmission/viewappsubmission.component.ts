@@ -103,7 +103,7 @@ export class ViewappsubmissionComponent {
         };
 
         // Send email
-        this.http.post('https://localhost:7261/api/Email/send', emailPayload).subscribe({
+        this.http.post('http://13.61.64.165:5000/api/Email/send', emailPayload).subscribe({
           next: () => {
             alert('Application accepted and email sent successfully!');
           },
